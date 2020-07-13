@@ -8,7 +8,7 @@
 
 import math
 def fun_find_int_roots(a, b, c):
-	x = -b/(2*a)
+	x = (-b + (math.sqrt(b**2 - (4*a*c))))/ 2*a
 	y = a * (x**2) + b * x + c
 	if (x > y):
 		return y,x
