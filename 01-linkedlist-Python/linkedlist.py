@@ -31,9 +31,7 @@ class LinkedList(object):
         temp = self.head
         if (temp == None):
             return None
-        while (n < position):
-            if temp == None:
-                return None
+        while (n < position and temp.next != None):
             temp = temp.next
         if temp == None:
             return None
