@@ -19,7 +19,7 @@ class LinkedList(object):
         
     def append(self, new_element):
         # Your code goes here
-
+        
         pass
             
     def get_position(self, position):
