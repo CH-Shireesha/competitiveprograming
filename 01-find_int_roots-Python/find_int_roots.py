@@ -9,9 +9,9 @@
 import math
 def fun_find_int_roots(a, b, c):
 	x = (-b + (math.sqrt(b**2 - (4*a*c))))/ 2*a
-	y = a * (x**2) + b * x + c
-	if (x > y):
-		return y,x
-	return x,y
+	x1 = (-b - (math.sqrt(b**2 - (4*a*c))))/ 2*a
+	if (x > x1):
+		return x1,x
+	return x,x1
 
 
