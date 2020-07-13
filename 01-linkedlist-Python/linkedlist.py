@@ -34,8 +34,6 @@ class LinkedList(object):
         while (n < position and temp.next != None):
             temp = temp.next
             n = n+1
-        if temp == None:
-            return None
         return temp
         pass
     
@@ -53,6 +51,7 @@ class LinkedList(object):
         else:
             while (n < position):
                 temp = temp.next
+                n = n + 1
             current = temp.next
             temp.next = new_element
             new_element.next = current
