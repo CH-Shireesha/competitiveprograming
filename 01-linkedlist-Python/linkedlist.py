@@ -34,14 +34,11 @@ class LinkedList(object):
         # Your code goes here
         n = 1
         temp = self.head
-        print("----", temp.value)
         if (temp == None):
             return None
         while (n < position and temp.next != None):
-            print(position, n, "----", temp.value)
             temp = temp.next
             n = n+1
-        print(temp.value)
         if n != position:
             return None
         return temp
@@ -89,4 +86,4 @@ ll = LinkedList(e1)
 ll.append(e2)
 ll.append(e3)
 
-print(ll.get_position(3))
+print(ll.get_position(3).value)
