@@ -16,6 +16,7 @@ class Element(object):
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
+        print("____", self.head.value)
         
     def append(self, new_element):
         # Your code goes here
@@ -75,3 +76,11 @@ class LinkedList(object):
                 temp.next = temp.next.next
                 return
             temp = temp.next
+
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
