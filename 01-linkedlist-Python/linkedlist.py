@@ -35,6 +35,7 @@ class LinkedList(object):
             print(position, n, "----", temp.value)
             temp = temp.next
             n = n+1
+        print(temp.value)
         if n != position:
             return None
         return temp
