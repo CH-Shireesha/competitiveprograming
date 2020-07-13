@@ -19,7 +19,11 @@ class LinkedList(object):
         
     def append(self, new_element):
         # Your code goes here
-        
+        temp = self.head
+        if (self.head == None):
+            self.head = new_element
+        while (temp.next != None):
+            temp = temp.next
         pass
             
     def get_position(self, position):
@@ -70,7 +74,7 @@ class LinkedList(object):
         if (temp.value == value):
             self.head = temp.next
             return
-        while (temp.next == None):
+        while (temp.next != None):
             if(temp.next.value == value):
                 temp.next = temp.next.next
                 return
