@@ -33,6 +33,7 @@ class LinkedList(object):
             return None
         while (n < position and temp.next != None):
             temp = temp.next
+            n = n+1
         if temp == None:
             return None
         return temp
