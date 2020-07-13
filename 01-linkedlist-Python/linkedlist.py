@@ -73,21 +73,3 @@ class LinkedList(object):
         if (temp.value == value):
             self.head = temp.next
             return
-        while (temp.next != None):
-            if(temp.next.value == value):
-                temp.next = temp.next.next
-                return
-            temp = temp.next
-
-e1 = Element(1)
-e2 = Element(2)
-e3 = Element(3)
-
-ll = LinkedList(e1)
-ll.append(e2)
-ll.append(e3)
-
-e4 = Element(4)
-ll.insert(e4,3)
-print(ll.get_position(3).value)
-ll.delete(1)
