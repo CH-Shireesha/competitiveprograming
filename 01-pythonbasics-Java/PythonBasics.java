@@ -8,6 +8,12 @@
 
 public class PythonBasics {
     public String show_excitement() {
-    	// your code goes here
+		// your code goes here
+		String str = "I am super excited for this course! ";
+		String s = "";
+		for (int i=0; i < 5; i++) {
+			s = s + str;
+		}
+		return s;
 	}
 }
