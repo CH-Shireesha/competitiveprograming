@@ -19,6 +19,7 @@ class LinkedList(object):
         
     def append(self, new_element):
         # Your code goes here
+
         pass
             
     def get_position(self, position):
@@ -26,6 +27,17 @@ class LinkedList(object):
         Assume the first position is "1".
         Return "None" if position is not in the list."""
         # Your code goes here
+        n = 1
+        temp = self.head
+        if (temp == None):
+            return None
+        while (n < position):
+            if temp == None:
+                return None
+            temp = temp.next
+        if temp == None:
+            return None
+        return temp
         pass
     
     def insert(self, new_element, position):
@@ -34,10 +46,29 @@ class LinkedList(object):
         Inserting at position 3 means between
         the 2nd and 3rd elements."""
         # Your code goes here
+        n = 1
+        temp = self.head
+        if (position == 1):
+            self.head = new_element
+            self.head.next = temp
+        else:
+            while (n < position):
+                temp = temp.next
+            current = temp.next
+            temp.next = new_element
+            new_element.next = current
         pass
     
     
     def delete(self, value):
         """Delete the first node with a given value."""
         # Your code goes here
-        pass
+        temp = self.head
+        if (temp.value == value):
+            self.head = temp.next
+            return
+        while (temp.next == None):
+            if(temp.next.value == value):
+                temp.next = temp.next.next
+                return
+            temp = temp.next
