@@ -24,6 +24,7 @@ class LinkedList(object):
             self.head = new_element
         while (temp.next != None):
             temp = temp.next
+        temp.next = new_element
         pass
             
     def get_position(self, position):
