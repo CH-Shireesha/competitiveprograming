@@ -77,13 +77,3 @@ class LinkedList(object):
                 temp.next = temp.next.next
                 return
             temp = temp.next
-
-e1 = Element(1)
-e2 = Element(2)
-e3 = Element(3)
-
-ll = LinkedList(e1)
-ll.append(e2)
-ll.append(e3)
-
-print(ll.get_position(3).value)
