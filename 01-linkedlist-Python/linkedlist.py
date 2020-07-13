@@ -56,9 +56,10 @@ class LinkedList(object):
             self.head = new_element
             self.head.next = temp
         else:
-            while (n < position):
+            while (n < position-1):
                 temp = temp.next
                 n = n + 1
+            
             current = temp.next
             temp.next = new_element
             new_element.next = current
@@ -88,3 +89,4 @@ ll.append(e3)
 
 e4 = Element(4)
 ll.insert(e4,3)
+print(ll.get_position(3).value)
