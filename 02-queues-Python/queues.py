@@ -18,10 +18,5 @@ class Queue:
         pass  
 
     def dequeue(self):
-        return self.storage.pop()
+        return self.storage.pop(0)
         pass
-
-q = Queue(1)
-q.enqueue(2)
-q.enqueue(3)
-print(q.peek())
