@@ -40,7 +40,7 @@ def sortUSA():
 
 def alphaAsia():
     country = []
-    for i,k in locations['Asia']:
+    for i,k in locations['Asia'].items():
         i = i.sort()
         for j in i:
             country.append(j,"-",k)
