@@ -6,11 +6,8 @@
 
 
 def fun_get_kth_digit(digit, k):
-	num = 1
-	l = []
-	while (digit <= 0):
-		n = digit % 10
-		l[num] = n
-		digit //= 10
-		num += 1
-	return l[k]
+	n = str(digit)
+	if k <= len(n):
+		return digit[k]
+	else:
+		return 0
