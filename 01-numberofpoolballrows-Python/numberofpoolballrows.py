@@ -7,7 +7,7 @@
 
 def fun_numberofpoolballrows(balls):
 	num = 1
-	for i in range(0,balls):
+	for i in range(0,num):
 		count = []
 		for j in range(0, i+1):
 			count += [j]
