@@ -10,6 +10,6 @@ from decimal import Decimal
 
 def fun_numberofpoolballrows(balls):
 	n = Decimal(balls)/2
-	return n.to_integral_value()
+	print(n.to_integral_value())
 
 
