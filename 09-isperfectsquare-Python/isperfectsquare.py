@@ -9,12 +9,10 @@ def isperfectsquare(n):
 	# your code goes here
 	try:
 		num = int(n)
-		if m.isfinite(num) and (m.sqrt(num)).is_integer():
+		if n >0 and (m.sqrt(num)).is_integer():
 			return True
 		else:
 			return False
 	except ValueError:
 		return False
 	pass
-
-isperfectsquare(625)
