@@ -13,3 +13,4 @@ def fun_numberofpoolballrows(balls):
 	print(n.to_integral_value())
 
 
+fun_numberofpoolballrows(7)
