@@ -13,7 +13,7 @@ def fun_numberofpoolballrows(balls):
 			for j in range(0, i+1):
 				count += [j]
 				num += 1
-		balls -= 1
+			balls -= 1
 		print(num)
 		return len(count)
 
