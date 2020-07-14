@@ -39,4 +39,7 @@ def sortUSA():
 
 
 def alphaAsia():
+    country = []
+    for i,k in locations['Asia']:
+        i = i.sort()
     pass
