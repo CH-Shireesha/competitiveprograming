@@ -6,14 +6,13 @@
 
 
 from math import floor
+import math as m
 
 def fun_nearestodd(n):
 	odd = floor(n/2)*2 + 1
 	num = floor(n/2)*2 - 1
-	if num % 2 != 0:
-		if num < odd:
-			return num
-		else:
-			return odd
+	if m.modf(n) == 0:
+		return num
+	return odd
 
 
