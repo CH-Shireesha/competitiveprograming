@@ -34,17 +34,16 @@ locations = {'North America': {'USA': ['Mountain View','Atlanta']}, 'Asia': {'In
 
 
 def sortUSA():
-    return locations['North America']['USA'].sort()
+    locations['North America']['USA'].sort()
+    return locations['North America']['USA']
     pass
 
 
 def alphaAsia():
     country = []
     for k,i in locations['Asia'].items():
-        i = i.sort()
-        print("-----",i)
+        i.sort()
         for j in i:
-            country.append(j,"-",k)
+            country.append(j+" - "+k)
     return country
     pass
-
