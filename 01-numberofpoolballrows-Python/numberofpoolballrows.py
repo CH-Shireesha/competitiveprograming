@@ -9,7 +9,7 @@
 from decimal import Decimal
 
 def fun_numberofpoolballrows(balls):
-	n = Decimal(balls//2)
+	n = Decimal(balls)/2
 	return n
 
 
