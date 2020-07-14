@@ -11,8 +11,9 @@ import math as m
 def fun_nearestodd(n):
 	odd = floor(n/2)*2 + 1
 	num = floor(n/2)*2 - 1
-	if m.modf(n) == 0:
+	x,y = m.modf(n)
+	if x == 0.0:
 		return num
 	return odd
 
-
+print(fun_nearestodd(12.0))
