@@ -7,7 +7,15 @@ import math as m
 
 def isperfectsquare(n):
 	# your code goes here
-	if m.sqrt(n) == int:
-		return True
-	return False
+	try:
+		n = int(n)
+		print(n, m.sqrt(n), type(m.sqrt(n)))
+		if m.isfinite(n) and type(m.sqrt(n)) == int:
+			return True
+		else:
+			return False
+	except ValueError:
+		return False
 	pass
+
+isperfectsquare(625)
