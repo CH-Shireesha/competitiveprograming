@@ -5,13 +5,10 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    res = [[0,0,0,0],[0,0,0,0],[0,0,0,0]]
-    for i in range(len(m1)):
-        for j in range(len(m2[0])):
-            for k in range(len(m2)):
-                res[i][j] += m1[i][k] * m2[k][j]
-    for r in res:
-        return r
+    res = [[sum(a*b for a,b in zip(m1_row,m2_col)) for m2_col in zip(*m2)] for m1_row in m1]
+    # for r in res:
+    print("----", res)
+    return res
 
 
 
