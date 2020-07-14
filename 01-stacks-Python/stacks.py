@@ -36,7 +36,7 @@ class LinkedList(object):
         temp = self.head
         if self.head:
             self.head = temp.next
-            return head.value
+            return temp
         return None
         pass
 
