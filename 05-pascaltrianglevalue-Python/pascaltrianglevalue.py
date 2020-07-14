@@ -12,10 +12,8 @@ import math as m
 
 def fun_pascaltrianglevalue(row, col):
 	res = m.floor(fact(row)/ (fact(col) * fact(row-col)))
-	if m.isfinite(res):
-		return res
-	else:
-		return 0
+	return res
+
 
 def fact(n):
 	s = 1
