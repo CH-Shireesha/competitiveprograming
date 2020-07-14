@@ -8,8 +8,8 @@ import math as m
 def isperfectsquare(n):
 	# your code goes here
 	try:
-		n = int(n)
-		if m.isfinite(n) and (m.sqrt(n)).is_integer():
+		num = int(n)
+		if m.isfinite(num) and (m.sqrt(num)).is_integer():
 			return True
 		else:
 			return False
