@@ -34,7 +34,7 @@ locations = {'North America': {'USA': ['Mountain View','Atlanta']}, 'Asia': {'In
 
 
 def sortUSA():
-    locations['North America']['USA'].sort()
+    return locations['North America']['USA'].sort()
     pass
 
 
