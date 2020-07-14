@@ -9,8 +9,7 @@ def isperfectsquare(n):
 	# your code goes here
 	try:
 		n = int(n)
-		print(n, m.sqrt(n), type(m.sqrt(n)))
-		if m.isfinite(n) and type(m.sqrt(n)) == int:
+		if m.isfinite(n) and (m.sqrt(n)).is_integer():
 			return True
 		else:
 			return False
