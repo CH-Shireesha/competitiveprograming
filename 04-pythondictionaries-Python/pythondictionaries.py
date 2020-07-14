@@ -31,3 +31,12 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']}}
+
+
+def sortUSA():
+    
+    pass
+
+
+def alphaAsia():
+    pass
