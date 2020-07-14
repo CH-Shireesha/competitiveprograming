@@ -13,7 +13,7 @@ def fun_numberofpoolballrows(balls):
 			count += [j]
 			num += 1
 	print(count)
-	return count
+	return len(count)
 
 fun_numberofpoolballrows(7)
 
