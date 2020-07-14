@@ -8,7 +8,7 @@
 from math import floor
 
 def fun_nearestodd(n):
-	odd = floor(n/2.0)*2 + 1
+	odd = (floor(n)/2)*2 + 1
 	return odd
 
 
