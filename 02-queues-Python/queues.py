@@ -10,7 +10,6 @@ class Queue:
 
     def enqueue(self, new_element):
         self.storage.insert(len(self.storage),new_element)
-        print(self.storage,"iiiiii")
         pass
 
     def peek(self):
