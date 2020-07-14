@@ -5,10 +5,14 @@
 
 
 
+
 from math import floor
 
 def fun_nearestodd(n):
-	odd = (floor(n)/2)*2 + 1
+	odd = floor(n) // 2 * 2 + 1
+	n = floor(n) // 2 * 2 - 1
+	if n > odd:
+		return n
 	return odd
 
 
