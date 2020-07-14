@@ -18,7 +18,15 @@ Use the test cases below to guide you!"""
 class Classy(object):
     def __init__(self):
         self.items = []
+
     def addItem(self,item):
-        self.items.push(item)
+        self.items.append(item)
+
     def classiness(self):
         classy_dic = {"tophat":2,"bowtie":4,"monocle":5}
+        sum = 0
+        for i in self.items:
+            if i in classy_dic.keys():
+                sum += classy_dic[i]
+        return sum
+
