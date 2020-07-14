@@ -12,8 +12,7 @@ def fun_nearestodd(n):
 	odd = floor(n/2)*2 + 1
 	num = floor(n/2)*2 - 1
 	x,y = m.modf(n)
-	if x == 0.0:
+	if n%2 == 0 and x == 0.0:
 		return num
 	return odd
 
-print(fun_nearestodd(12.0))
