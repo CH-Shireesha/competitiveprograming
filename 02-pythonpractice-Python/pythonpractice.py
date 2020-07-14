@@ -18,3 +18,7 @@ Use the test cases below to guide you!"""
 class Classy(object):
     def __init__(self):
         self.items = []
+    def addItem(self,item):
+        self.items.push(item)
+    def classiness(self):
+        classy_dic = {"tophat":2,"bowtie":4,"monocle":5}
