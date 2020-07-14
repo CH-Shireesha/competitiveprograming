@@ -13,6 +13,7 @@ def fun_nearestodd(n):
 	if num % 2 != 0:
 		if num < odd:
 			return num
-	return odd
+		else:
+			return odd
 
 
