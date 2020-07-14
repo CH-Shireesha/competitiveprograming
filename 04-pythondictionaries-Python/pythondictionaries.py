@@ -42,4 +42,7 @@ def alphaAsia():
     country = []
     for i,k in locations['Asia']:
         i = i.sort()
+        for j in i:
+            country.append(j,"-",k)
+    return country
     pass
