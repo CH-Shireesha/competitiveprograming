@@ -9,6 +9,10 @@ from math import floor
 
 def fun_nearestodd(n):
 	odd = floor(n/2)*2 + 1
+	num = floor(n/2)*2 - 1
+	if num % 2 != 0:
+		if num < odd:
+			return num
 	return odd
 
 
