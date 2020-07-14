@@ -15,6 +15,6 @@ def fact(n):
 	s = 1
 	for i in range(2, n + 1):
 		s = s * i
-	if type(s) != int:
+	if type(s) == float:
 		return 0
 	return s
