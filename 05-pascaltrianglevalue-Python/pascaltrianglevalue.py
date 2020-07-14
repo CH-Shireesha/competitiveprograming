@@ -9,4 +9,12 @@
 
 
 def fun_pascaltrianglevalue(row, col):
-	return 1
+	return (fact(row)/ (fact(col) * fact(row-col)))
+
+def fact(n):
+	s = 1
+	for i in range(2, n + 1):
+		s = s * i
+	if type(s) != int:
+		return 0
+	return s
