@@ -6,6 +6,7 @@
 
 
 def fun_nearestodd(n):
-	return 0
+	odd = floor(n/2.0)*2 + 1
+	return odd
 
 
