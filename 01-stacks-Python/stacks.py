@@ -26,10 +26,12 @@ class LinkedList(object):
 
     def insert_first(self, new_element):
         "Insert new element as the head of the LinkedList"
+        self.head = new_element
         pass
 
     def delete_first(self):
         "Delete the first (head) element in the LinkedList as return it"
+        
         pass
 
 class stack(object):
