@@ -8,7 +8,7 @@
 from math import floor
 
 def fun_numberofpoolballrows(balls):
-	n = floor(balls//2)
+	n = round(balls//2)
 	return n
 
 
