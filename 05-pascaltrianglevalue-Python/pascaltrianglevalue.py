@@ -8,11 +8,19 @@
 
 
 
+import math as m
+
 def fun_pascaltrianglevalue(row, col):
-	return (fact(row)/ (fact(col) * fact(row-col)))
+	res = (fact(row)/ (fact(col) * fact(row-col)))
+	if m.isfinite(res):
+		return res
+	else:
+		return 0
 
 def fact(n):
 	s = 1
 	for i in range(2, n + 1):
 		s = s * i
 	return s
+
+fun_pascaltrianglevalue(6, 3)
