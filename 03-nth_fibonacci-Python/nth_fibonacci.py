@@ -9,4 +9,10 @@
 
 def fun_nthfibonaccinumber(n):
 	# your code goes Here
+	num = 0
+	while num <= n:
+		n = f(n-1) + f(n-2)
 	return 0
+
+def f(n):
+	return n
