@@ -10,7 +10,8 @@ def fun_numberofpoolballrows(balls):
 	for num in range(1,balls + 1):
 		row = row + 1
 		num = (num*(num + 1))/2
+	return row
 
 
-fun_numberofpoolballrows(7)
+# fun_numberofpoolballrows(7)
 
