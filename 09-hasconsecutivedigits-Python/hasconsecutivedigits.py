@@ -8,7 +8,7 @@ def hasconsecutivedigits(n):
 	count = 0
 	prev = n % 10
 	n //= 10
-	while(n >= 0):
+	while(n > 0):
 		temp = n % 10
 		n //= 10
 		if (temp == prev):
