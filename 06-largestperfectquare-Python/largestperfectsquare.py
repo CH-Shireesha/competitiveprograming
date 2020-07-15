@@ -18,4 +18,4 @@ def largestperfectsquare(n):
 		while(num > 0):
 			if (m.sqrt(n)).is_integer():
 				return n
-			num = num + 1
+			num = num - 1
