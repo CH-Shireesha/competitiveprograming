@@ -18,6 +18,8 @@ def ishappynumber(n):
 	# your code goes here
 	rem = sum = 0
 	n = abs(n)
+	if n == 1:
+		return True
 	while(n > 0):
 		rem = n % 10
 		sum = sum + ( rem * rem)
