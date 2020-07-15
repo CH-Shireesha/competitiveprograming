@@ -16,4 +16,15 @@
 
 def ishappynumber(n):
 	# your code goes here
-	pass
+	rem = sum = 0
+	while(n > 0):
+		rem = n % 10
+		sum = sum + ( rem ** 2)
+		n //= 10
+	result = n
+	while(result != 1 and result != 4):
+		result = ishappynumber(result)
+	if (result == 1):
+		return True
+	else:
+		return False
