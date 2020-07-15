@@ -14,4 +14,5 @@ def gcd(m, n):
 		print(m,n)
 		return n
 	else:
-		return gcd(n % m, m )
+		print(gcd(n % m, m ))
+		
