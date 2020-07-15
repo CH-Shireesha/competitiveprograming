@@ -12,6 +12,8 @@
 # . Hint: you may want to use fabricYards, which you just wrote!
 
 
+from math import ceil
+
 def fun_fabricyards(inches):
 	# your code goes here
 	n = ceil(inches/36)
