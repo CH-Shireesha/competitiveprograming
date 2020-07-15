@@ -15,5 +15,3 @@ def hasconsecutivedigits(n):
 			return True
 		prev = temp
 	return False
-	
-	pass
