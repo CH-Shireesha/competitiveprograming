@@ -12,7 +12,7 @@ def fun_nthfibonaccinumber(n):
 	num = 0
 	while num <= n:
 		n = f(n-1) + f(n-2)
-	return 0
+	return n
 
 def f(n):
 	return n
