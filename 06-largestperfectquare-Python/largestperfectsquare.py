@@ -17,5 +17,5 @@ def largestperfectsquare(n):
 	else:
 		while(num < n):
 			if (m.srqt(n)).is_integer():
-				num += 1
 				return n
+			num = num + 1
