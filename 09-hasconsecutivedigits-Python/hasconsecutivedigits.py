@@ -14,7 +14,6 @@ def hasconsecutivedigits(n):
 		if (temp == prev):
 			return True
 		prev = temp
-		n //= 10
 	return False
 	
 	pass
