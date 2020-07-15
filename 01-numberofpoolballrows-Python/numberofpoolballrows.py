@@ -5,12 +5,15 @@
 # returns 3. Note that if any balls must be in a row, then you count that row, and so 
 # numberOfPoolBallRows(7) returns 4 (since the 4th row must have a single ball in it).
 
-
-from decimal import Decimal
-
 def fun_numberofpoolballrows(balls):
-	n = Decimal(balls)/2
-	print(n.to_integral_value())
+	num = 1
+	for i in range(0,balls):
+		count = []
+		for j in range(0, i+1):
+			count += [j]
+			num += 1
+	print(len(count))
+	return len(count)
 
+fun_numberofpoolballrows(7)
 
-fun_numberofpoolballrows(10)
