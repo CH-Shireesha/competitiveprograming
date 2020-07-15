@@ -20,7 +20,7 @@ def ishappynumber(n):
 	n = abs(n)
 	if n == 1:
 		return True
-	while(n > 0):
+	while(n > 0 or n == 4):
 		rem = n % 10
 		sum = sum + ( rem * rem)
 		n //= 10
