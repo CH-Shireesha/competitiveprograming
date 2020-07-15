@@ -9,8 +9,6 @@
 
 def fun_nthfibonaccinumber(n):
 	# your code goes Here
-	num = 0
-	while num <= n:
-		n = fun_nthfibonaccinumber(n-1) + fun_nthfibonaccinumber(n-2)
-		num = num + 1
-	return n
+	if n == 0 and 1:
+		return 1
+	return fun_nthfibonaccinumber(n-1) + fun_nthfibonaccinumber(n-2)
