@@ -12,10 +12,10 @@ import math as m
 def largestperfectsquare(n):
 	# your code goes here
 	num = n - 1
-	if (m.srqt(n)).is_integer():
+	if (m.sqrt(n)).is_integer():
 		return n
 	else:
 		while(num < n):
-			if (m.srqt(n)).is_integer():
+			if (m.sqrt(n)).is_integer():
 				return n
 			num = num + 1
