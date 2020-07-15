@@ -6,7 +6,7 @@ import math
 from math import sqrt
 
 def fun_threelines_area(a, b, c):
-	p = (a + b + c)/2
+	p = round((a + b + c)/2)
 	area = sqrt(p*(p-a)*(p-b)*(p-c))
 	return area
 
