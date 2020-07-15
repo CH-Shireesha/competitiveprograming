@@ -13,10 +13,8 @@ def hasconsecutivedigits(n):
 		n //= 10
 		if (temp == prev):
 			return True
-			break
-		else:
-			prev = n%10
-			n //= 10
+		prev = temp
+		n //= 10
 	return False
 	
 	pass
