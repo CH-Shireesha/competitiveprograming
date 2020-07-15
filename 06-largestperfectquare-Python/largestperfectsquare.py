@@ -7,6 +7,15 @@
 # Hint: you may wish to use a similar approach to how you solved isPerfectSquare on the hw.
 # Another hint: This can be written using just one or two lines of Python.
 
+import math as m
+
 def largestperfectsquare(n):
 	# your code goes here
-	pass
+	num = 0
+	if (m.srqt(n)).is_integer():
+		return n
+	else:
+		while(num < n):
+			if (m.srqt(n)).is_integer():
+				num += 1
+				return n
