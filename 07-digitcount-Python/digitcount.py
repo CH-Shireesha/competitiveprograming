@@ -12,7 +12,6 @@ def digitcount(n):
 	while (num > 0):
 		count += 1
 		num //= 10
-		print(num)
 	return count
 
 digitcount(0)
