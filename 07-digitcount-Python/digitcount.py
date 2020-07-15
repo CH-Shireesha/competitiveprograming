@@ -11,7 +11,4 @@ def digitcount(n):
 	while (abs(n) > 0):
 		count += 1
 		n //= 10
-		print(count)
 	return count
-
-digitcount(13567)
