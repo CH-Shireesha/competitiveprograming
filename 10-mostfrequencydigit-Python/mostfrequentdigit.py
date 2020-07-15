@@ -4,4 +4,12 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
+	dic = {0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0}
+	temp = n
+	while temp > 0:
+		temp = n % 10
+		dic[temp] += 1
+		temp //= 10
+	freq = max(dic, key = dic.get)
+	return freq
 	pass
