@@ -24,7 +24,7 @@ def ishappynumber(n):
 		rem = n % 10
 		sum = sum + ( rem * rem)
 		n //= 10
-	return n
+	return sum
 	result = n
 	if(result != 1 and result != 4):
 		result = ishappynumber(result)
