@@ -21,8 +21,6 @@ def fun_fabricyards(inches):
 
 def fun_fabricexcess(inches):
 	# your code goes here
-	
-	return 1
-
-
-fun_fabricyards(1)
+	yard = fun_fabricyards(inches)
+	req = (yard * 36) - inches
+	return req
