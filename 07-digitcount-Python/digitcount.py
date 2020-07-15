@@ -7,8 +7,8 @@
 
 def digitcount(n):
 	# your code goes here
-	L = []
-	n = str(n)
-	L = n.split()
-	return len(L)
-	pass
+	count = 0
+	while (abs(n) >= 0):
+		n //= 10
+		count += 1
+	return count
