@@ -11,7 +11,7 @@ import math as m
 
 def largestperfectsquare(n):
 	# your code goes here
-	num = 0
+	num = n - 1
 	if (m.srqt(n)).is_integer():
 		return n
 	else:
