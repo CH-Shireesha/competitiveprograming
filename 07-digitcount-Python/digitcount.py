@@ -9,7 +9,6 @@ def digitcount(n):
 	# your code goes here
 	count = 0
 	num = abs(n)
-	print(num > 0)
 	while (num > 0):
 		count += 1
 		num //= 10
