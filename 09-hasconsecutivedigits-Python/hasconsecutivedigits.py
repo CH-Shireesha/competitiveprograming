@@ -4,4 +4,17 @@
 
 def hasconsecutivedigits(n):
 	# your code goes here
+	n = abs(n)
+	count = 0
+	prev = n % 10
+	n //= 10
+	while(n > 0):
+		temp = n % 10
+		if (temp == prev):
+			return True
+		else:
+			prev = n%10
+			n //= 10
+		n //= 10
+	
 	pass
