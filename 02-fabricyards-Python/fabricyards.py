@@ -17,6 +17,7 @@ import math
 def fun_fabricyards(inches):
 	# your code goes here
 	n = math.ceil(inches/36)
+	print(n)
 	return n
 
 def fun_fabricexcess(inches):
