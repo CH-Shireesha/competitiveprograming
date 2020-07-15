@@ -25,3 +25,4 @@ def fun_fabricexcess(inches):
 	return 1
 
 
+fun_fabricyards(1)
