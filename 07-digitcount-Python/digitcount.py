@@ -13,5 +13,3 @@ def digitcount(n):
 		count += 1
 		num //= 10
 	return count
-
-digitcount(0)
