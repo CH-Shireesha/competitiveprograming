@@ -12,11 +12,11 @@
 # . Hint: you may want to use fabricYards, which you just wrote!
 
 
-from math import ceil
+import math
 
 def fun_fabricyards(inches):
 	# your code goes here
-	n = ceil(inches/36)
+	n = math.ceil(inches/36)
 	return n
 
 def fun_fabricexcess(inches):
