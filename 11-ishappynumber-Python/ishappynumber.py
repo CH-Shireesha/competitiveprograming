@@ -23,7 +23,7 @@ def ishappynumber(n):
 		sum = sum + ( rem ** 2)
 		n //= 10
 	result = n
-	while(result != 1 and result != 4):
+	if(result != 1 and result != 4):
 		result = ishappynumber(result)
 	if (result == 1):
 		return True
