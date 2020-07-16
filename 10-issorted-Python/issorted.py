@@ -22,4 +22,4 @@ def issorted(a):
 	pass
 
 
-issorted([])
+issorted([4,3,2,1])
