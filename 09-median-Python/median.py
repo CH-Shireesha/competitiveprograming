@@ -10,6 +10,12 @@ def median(a):
 	# your code goes here
 	if a.isempty():
 		return None
-	n = statistics.median(a)
-	return n
+	n = len(a)
+	if n % 2 == 0:
+		start = a[n//2]
+		end = a[n//2 - 1]
+		median = (start + end )/2
+		return median
+	else:
+		return a[n//2]
 	pass
