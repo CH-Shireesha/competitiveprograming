@@ -13,7 +13,7 @@ def fun_interleave(s1,s2):
 		for i in range (0,len(s1)):
 			st = s.join(s1[i])
 			st = s.join(s2[i])
-			print(st)
+		print(st)
 		return s
 	
 fun_interleave('pto', 'yhn')
