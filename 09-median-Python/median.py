@@ -11,5 +11,5 @@ def median(a):
 	if a.isempty():
 		return None
 	n = statistics.median(a)
-	return round(n)
+	return n
 	pass
