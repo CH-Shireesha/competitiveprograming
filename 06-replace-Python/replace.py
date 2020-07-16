@@ -12,7 +12,7 @@ def fun_replace(s1, s2, s3):
 			for j in range(0,len(s3)):
 				k = s3[j]
 			res.append(k)
-	print(s1)
+	print(''.join(res))
 	return ''.join(res)
 
 fun_replace("helloworld123", "hello", "345")
