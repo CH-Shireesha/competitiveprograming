@@ -10,6 +10,8 @@ import copy
 def issorted(a):
 	# your code goes here
 	m = copy.deepcopy(a)
+	n = copy.deepcopy(a)
+	n.sort(reverse=True)
 	a.sort()
 	print(m,a)
 	if (m == a):
