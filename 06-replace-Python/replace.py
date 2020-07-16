@@ -9,10 +9,9 @@ def fun_replace(s1, s2, s3):
 	k = ""
 	if s2 in s1:
 		substring = s1.find(s2)
-		for i in range(substring,len(s2)):
-			for j in range(0,len(s3)):
-				k = k + s3[j]
-			res.append(k)
+		n = substring + (len(s2) -1)
+		sub = s1[n:]
+		k = s3+sub 
 	print(''.join(res))
 	return ''.join(res)
 
