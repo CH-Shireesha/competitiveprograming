@@ -11,12 +11,9 @@ def issorted(a):
 	# your code goes here
 	m = copy.deepcopy(a)
 	a.sort()
-	print(m,a)
 	if (m == a):
 		return True
 	else:
 		return False
 	pass
 
-
-issorted([7,6,4,5,6])
