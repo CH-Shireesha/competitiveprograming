@@ -5,9 +5,11 @@
 
 
 def fun_replace(s1, s2, s3):
-	for i in range(0,len(s1)):
-		if s2 in s3:
-			substring = s1.find(s2)
-			
+	if s2 in s3:
+		substring = s1.find(s2)
+		for i in range(substring,len(s2)):
+			for j in range(0,len(s3)):
+				s1[i] = s3[j]
+	print(s1)
 	return s1
 
