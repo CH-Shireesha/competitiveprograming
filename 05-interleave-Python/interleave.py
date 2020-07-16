@@ -13,6 +13,7 @@ def fun_interleave(s1,s2):
 		for i in range (0,len(s1)):
 			for j in range(0,len(s1)):
 				s = s1[i] + s2[j]
+		"".join(s)
 		print(s)
 		return s
 	return ""
