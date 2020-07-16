@@ -15,6 +15,5 @@ def fun_interleave(s1,s2):
 			s.join(s2[i])
 		print(s)
 		return s
-	return ""
 	
 fun_interleave('pto', 'yhn')
