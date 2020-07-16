@@ -14,19 +14,23 @@
 def fun_nth_happy_number(n):
 	for i in range(0,n):
 		n1 = 1
-		rem = sum = 0
-		if n1 == 1:
+		while ishappynumber(n1):
 			return n1
-		while True:
-			while(n1 > 0):
-				rem = n1 % 10
-				sum = sum + (rem * rem)
-				n1 //= 10
-			result = sum
-			if(result >= 10 and result !=1 and result != 4):
-				result = result
-			if (result == 1):
-				return result
-			else:
-				break
-	return 0
+
+def ishappynumber(n1):
+	rem = sum = 0
+	if n1 == 1:
+		return n1
+	while True:
+		while(n1 > 0):
+			rem = n1 % 10
+			sum = sum + (rem * rem)
+			n1 //= 10
+		result = sum
+		if(result >= 10 and result !=1 and result != 4):
+			result = ishappynumber(result)
+		if (result == 1):
+			return True
+		else:
+			return False
+
