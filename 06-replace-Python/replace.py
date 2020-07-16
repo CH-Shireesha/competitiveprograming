@@ -14,7 +14,7 @@ def fun_replace(s1, s2, s3):
 		sub = s1[n:]
 		n1 = s3+sub
 		k = prevsub+s3+sub
-		fun_replace(k, s2, s3)
+		fun_replace(n1, s2, s3)
 		print(k,n1) 
 		return k
 	else:
