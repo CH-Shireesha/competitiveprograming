@@ -8,6 +8,8 @@ import statistics
 
 def median(a):
 	# your code goes here
+	if a.isempty():
+		return None
 	n = statistics.median(a)
 	return round(n)
 	pass
