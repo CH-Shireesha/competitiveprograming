@@ -5,9 +5,11 @@
 # learn soon, it runs in O(n) time, where n=len(a)), and so in particular you may not sort 
 # the list.
 
+import copy
+
 def issorted(a):
 	# your code goes here
-	m = a
+	m = copy.deepcopy(a)
 	a.sort()
 	print(m,a)
 	if (m == a):
