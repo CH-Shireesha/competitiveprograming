@@ -3,6 +3,9 @@
 # which is the value of the middle element, or the average of the two middle elements if there is no single middle 
 # element. If the list is empty, return None.
 
+from statistics import median 
+
 def median(a):
 	# your code goes here
+
 	pass
