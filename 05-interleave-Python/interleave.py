@@ -25,5 +25,3 @@ def fun_interleave(s1,s2):
 		st = "".join(s)
 		st = st + sub
 		return st
-	
-fun_interleave('ptojl', 'yhn')
