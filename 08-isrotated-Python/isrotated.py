@@ -14,7 +14,7 @@ def isrotated(str1, str2):
 		return False
 	clock += str2[2:] +str2[0:2]
 	anti_clk += str2[len(str2)-2:]+str2[0:len(str2)-2]
-	if (temp.count(str2) > 0):
+	if (str1 == clock or str2 == anti_clk):
 		return True
 	return False
 	pass
