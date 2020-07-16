@@ -8,7 +8,7 @@ import statistics
 
 def median(a):
 	# your code goes here
-	if a.isempty():
+	if not a:
 		return None
 	n = len(a)
 	if n % 2 == 0:
