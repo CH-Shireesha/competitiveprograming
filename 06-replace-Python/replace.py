@@ -16,8 +16,8 @@ def fun_replace(s1, s2, s3):
 			print(substring,n1)
 			# n = substring + n1
 			prevsub = s1[:substring]
-			# sub = s1[n:]
-			# k = prevsub+s3+sub
+			sub = s1[n1:]
+			k = prevsub+s3+sub
 		print(k) 
 		return k
 	else:
