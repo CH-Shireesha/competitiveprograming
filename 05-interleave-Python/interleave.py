@@ -11,6 +11,8 @@ def fun_interleave(s1,s2):
 	s = ""
 	if len(s1) >= len(s2):
 		for i in range (0,len(s1)):
+			print(s1[i])
+			print(s2[i])
 			s.join(s1[i])
 			s.join(s2[i])
 		print(s)
