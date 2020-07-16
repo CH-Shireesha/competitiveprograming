@@ -13,7 +13,8 @@
 
 def fun_nth_happy_number(n):
 	for i in range(0,n):
-		while ishappynumber(n):
+		n1 = n
+		while ishappynumber(n1):
 			num = n
 			print(num)
 	return n
