@@ -15,7 +15,7 @@ def fun_interleave(s1,s2):
 	m = max(len(s1),len(s2))
 	print(m)
 	if m:
-		sub = s1[m:]
+		sub = s1[len(s2):]
 		print(sub,m,len(s2))
 		for i in range (0,len(s2)):
 			s.append(s1[i])
