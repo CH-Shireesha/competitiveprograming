@@ -9,7 +9,7 @@ def issorted(a):
 	# your code goes here
 	m = a
 	a.sort()
-	print(m)
+	print(m,a)
 	if (m == a):
 		return True
 	else:
