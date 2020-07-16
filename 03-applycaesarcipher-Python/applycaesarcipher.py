@@ -18,7 +18,7 @@ def fun_applycaesarcipher(msg, shift):
 			res += chr(ord(char) + shift + 65)
 		else:
 			res += chr(ord(char) + shift + 97)
-	return ""
+	return res
 
 
 
