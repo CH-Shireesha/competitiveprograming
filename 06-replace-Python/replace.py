@@ -6,11 +6,12 @@
 
 def fun_replace(s1, s2, s3):
 	res = []
+	k = ""
 	if s2 in s1:
 		substring = s1.find(s2)
 		for i in range(substring,len(s2)):
 			for j in range(0,len(s3)):
-				k = s3[j]
+				k = k + s3[j]
 		res.append(k)
 	print(''.join(res))
 	return ''.join(res)
