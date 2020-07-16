@@ -17,4 +17,4 @@ def issorted(a):
 	pass
 
 
-issorted([1,2,3,4,5,6])
+issorted([7,6,4,5,6])
