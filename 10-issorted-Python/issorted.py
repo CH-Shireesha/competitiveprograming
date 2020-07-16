@@ -13,6 +13,7 @@ def issorted(a):
 	a.sort()
 	print(m,a)
 	if (m == a):
+		print(True)
 		return True
 	else:
 		return False
