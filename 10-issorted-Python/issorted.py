@@ -13,8 +13,8 @@ def issorted(a):
 	n = copy.deepcopy(a)
 	n.sort(reverse=True)
 	a.sort()
-	print(m,a)
-	if (m == a or n==a):
+	print(m,a,)
+	if (m == a or m==n):
 		print(True)
 		return True
 	else:
