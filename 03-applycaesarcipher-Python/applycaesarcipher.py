@@ -18,12 +18,9 @@ def fun_applycaesarcipher(msg, shift):
 			res += " "
 		elif (char.isupper()):
 			res += chr((ord(char) + shift-65)%26 + 65)
-			print(ord(char) + shift)
 		else:
 			res += chr((ord(char) + shift-97)%26 + 97)
-	print(res)
 	return res
 
-fun_applycaesarcipher("We Attack At Dawn", 1)
 
 
