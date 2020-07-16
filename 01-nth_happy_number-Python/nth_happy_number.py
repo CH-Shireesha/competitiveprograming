@@ -14,6 +14,7 @@
 def fun_nth_happy_number(n):
 	for i in range(0,n):
 		n1 = 1
+		print(ishappynumber(n1))
 		while ishappynumber(n1):
 			n1 = n1 + 1
 			print(n1)
