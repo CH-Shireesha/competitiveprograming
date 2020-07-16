@@ -17,3 +17,4 @@ def fun_interleave(s1,s2):
 		return str
 	return ""
 	
+fun_interleave('pto', 'yhn')
