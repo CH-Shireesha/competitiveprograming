@@ -12,9 +12,11 @@ def fun_interleave(s1,s2):
 	st = ""
 	if len(s1) >= len(s2):
 		for i in range (0,len(s1)):
-			s.append(s1[i])
-			s.append(s2[i])
+			for j in range(0,len(s2)):
+				s.append(s1[i])
+				s.append(s2[j])
 		st = "".join(s)
+		print(st)
 		return st
 	
 fun_interleave('pto', 'yhn')
