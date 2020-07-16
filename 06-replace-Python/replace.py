@@ -12,7 +12,7 @@ def fun_replace(s1, s2, s3):
 		n = substring + (len(s2))
 		prevsub = s1[:n]
 		sub = s1[n:]
-		k = s3+sub 
+		k = prevsub+s3+sub 
 	print(k)
 	return ''.join(res)
 
