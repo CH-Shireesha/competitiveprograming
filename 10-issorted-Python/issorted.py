@@ -13,7 +13,6 @@ def issorted(a):
 	n = copy.deepcopy(a)
 	n.sort(reverse=True)
 	a.sort()
-	print(m,a,)
 	if (m == a or m==n):
 		print(True)
 		return True
@@ -21,5 +20,3 @@ def issorted(a):
 		return False
 	pass
 
-
-issorted([4,3,2,1])
