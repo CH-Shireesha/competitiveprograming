@@ -12,7 +12,7 @@ def fun_replace(s1, s2, s3):
 		n = substring + (len(s2) -1)
 		sub = s1[n:]
 		k = s3+sub 
-	print(''.join(res))
+	print(k)
 	return ''.join(res)
 
 fun_replace("helloworld123", "hello", "345")
