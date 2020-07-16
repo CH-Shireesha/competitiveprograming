@@ -7,16 +7,20 @@
 
 
 
+import math as m
+
 def fun_interleave(s1,s2):
 	s = []
 	st = ""
-	if len(s1) >= len(s2):
-		sub = s1[len(s2):]
+	m = max(len(s1),len(s2))
+	if m:
+		sub = s1[m:]
 		for i in range (0,len(s2)):
 			s.append(s1[i])
 			s.append(s2[i])
 		st = "".join(s)
 		st = st + sub
+		print(st)
 		return st
 	
 fun_interleave('ptojl', 'yhn')
