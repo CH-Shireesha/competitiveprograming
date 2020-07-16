@@ -11,9 +11,12 @@ def issorted(a):
 	# your code goes here
 	m = copy.deepcopy(a)
 	a.sort()
+	print(m,a)
 	if (m == a):
 		return True
 	else:
 		return False
 	pass
 
+
+issorted([])
