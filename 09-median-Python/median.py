@@ -8,5 +8,5 @@ from statistics import median
 def median(a):
 	# your code goes here
 	n = median(a)
-	return n
+	return round(n)
 	pass
