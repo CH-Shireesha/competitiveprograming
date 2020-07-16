@@ -10,7 +10,7 @@ def fun_replace(s1, s2, s3):
 	if s2 in s1:
 		substring = s1.find(s2)
 		n = substring + (len(s2))
-		prevsub = s1[:n]
+		prevsub = s1[:substring]
 		sub = s1[n:]
 		k = prevsub+s3+sub 
 	print(k)
