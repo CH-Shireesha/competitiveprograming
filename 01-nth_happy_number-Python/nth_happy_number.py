@@ -13,11 +13,11 @@
 
 def fun_nth_happy_number(n):
 	for i in range(0,n):
-		n1 = n
+		n1 = 1
 		while ishappynumber(n1):
-			num = n1
-			print(num)
-	return n
+			n1 = n1 + 1
+			print(n1)
+	return n1
 
 def ishappynumber(n1):
 	rem = sum = 0
