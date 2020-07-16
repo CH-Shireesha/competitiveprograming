@@ -5,4 +5,7 @@
 
 def removeduplicate(text):
 	# Your code goes here
+	l = text.split()
+	for i in range(0,len(text)):
+		l.append(text)
 	pass
