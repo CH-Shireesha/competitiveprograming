@@ -8,7 +8,7 @@ def fun_replace(s1, s2, s3):
 	res = []
 	k = ""
 	if s2 in s1:
-		for i in s1:
+		for s2 in s1:
 			substring = s1.find(s2)
 		n = substring + (len(s2))
 		prevsub = s1[:substring]
