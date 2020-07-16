@@ -14,3 +14,6 @@ def issorted(a):
 	else:
 		return False
 	pass
+
+
+issorted([1,2,3,4,5,6])
