@@ -8,10 +8,12 @@ def isrotated(str1, str2):
 	#Your code goes here
 	n1 = len(str1)
 	n2 = len(str2)
-	temp = ""
+	clock = ""
+	anti_clk = ""
 	if n1 != n2:
 		return False
-	temp = str1 + str1
+	clock += str2[2:] +str2[0:2]
+	anti_clk += str2[len(str2)-2:]+str2[0:len(str2)-2]
 	if (temp.count(str2) > 0):
 		return True
 	return False
