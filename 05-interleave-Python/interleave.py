@@ -19,4 +19,4 @@ def fun_interleave(s1,s2):
 		print(st)
 		return st
 	
-fun_interleave('pto', 'yhn')
+fun_interleave('ptojl', 'yhn')
