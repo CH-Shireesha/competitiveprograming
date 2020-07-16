@@ -8,6 +8,7 @@
 def issorted(a):
 	# your code goes here
 	m = a.sort()
+	print(m)
 	if (m == a):
 		return True
 	else:
