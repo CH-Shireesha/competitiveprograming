@@ -5,11 +5,14 @@
 
 
 def fun_replace(s1, s2, s3):
+	res = []
 	if s2 in s1:
 		substring = s1.find(s2)
 		for i in range(substring,len(s2)):
 			for j in range(0,len(s3)):
-				s1[i] = s3[j]
+				k = s3[j]
+			res.append(k)
 	print(s1)
-	return s1
+	return ''.join(res)
 
+fun_replace("helloworld123", "hello", "345")
