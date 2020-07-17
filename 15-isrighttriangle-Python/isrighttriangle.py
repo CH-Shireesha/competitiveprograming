@@ -29,7 +29,7 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	pass
 
 def distance(x1,y1,x2,y2):
-	dist = (math.sqrt((x2 - x1)**2 + (y2 - y1)**2))
+	dist = floor(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))
 	return dist
 
 isrighttriangle(-1, 7, 10, -4, 12, -2)
