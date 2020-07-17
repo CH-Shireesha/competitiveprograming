@@ -8,8 +8,8 @@
 def fun_ismultiple(m, n):
 	if (n == m):
 		return True
-	if (m == 0):
-		return True
-	if (n % m == 0):
+	if (n == 0):
+		return False
+	if (m % n == 0):
 		return True
 	return False # replace with your solution
