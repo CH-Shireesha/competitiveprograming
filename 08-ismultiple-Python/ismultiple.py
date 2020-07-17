@@ -10,6 +10,6 @@ def fun_ismultiple(m, n):
 		return True
 	if (m == 0):
 		return True
-	if (m % n == 0):
+	if (n % m == 0):
 		return True
 	return False # replace with your solution
