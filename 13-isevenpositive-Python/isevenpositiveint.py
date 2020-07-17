@@ -13,4 +13,3 @@ def isevenpositiveint(x):
 		return False
 	pass
 
-isevenpositiveint((2))
