@@ -5,6 +5,9 @@
 # distance(x1, y1, x2, y2), which you might call several times. Also, remember to use
 # almostEqual (instead of ==) when comparing floats.
 
+import math
+from math import floor
+
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 	a = distance(x1,y1,x2,y2)
