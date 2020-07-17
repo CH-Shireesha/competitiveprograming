@@ -6,9 +6,11 @@
 
 
 def fun_isfactor(f, n):
+	m = max(f,n)
+	mi = min(f,n)
 	if (n == 0 or f== n):
 		return True
-	elif (f%n == 0 or n%f == 0):
+	elif (m%mi == 0):
 		return True
 	else:
 		return False # replace with your solution
