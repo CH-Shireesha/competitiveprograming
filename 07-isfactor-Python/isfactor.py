@@ -6,4 +6,8 @@
 
 
 def fun_isfactor(f, n):
+	if (f == 0 or f== n):
+		return True
+	if (f%n == 0):
+		return True
 	return False # replace with your solution
