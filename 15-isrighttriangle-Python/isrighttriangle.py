@@ -16,6 +16,7 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	m = a**2 + b**2
 	n = b**2 + c**2
 	l = c**2 + a**2
+	print(a**2,b**2,c**2,m,n,l)
 	if (math.isclose(m,(c**2))):
 		return True
 	if(math.isclose(n, a**2)):
