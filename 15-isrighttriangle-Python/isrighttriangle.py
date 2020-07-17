@@ -16,11 +16,11 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	m = a**2 + b**2
 	n = b**2 + c**2
 	l = c**2 + a**2
-	if (m == c**2):
+	if (m.almostEqual(c**2)):
 		return True
-	if(n == a**2):
+	if(n.almostEqual(a**2)):
 		return True
-	if(l == a**2):
+	if(l.almostEqual(a**2)):
 		return True
 	return False
 	pass
