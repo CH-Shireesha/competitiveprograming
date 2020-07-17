@@ -10,6 +10,7 @@ from math import floor
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
+	abs(x1),abs(y1),abs(x2),abs(y2),abs(x3),abs(y3)
 	a = distance(x1,y1,x2,y2)
 	b = distance(x2,y2,x3,y3)
 	c = distance(x3,y3,x1,y2)
