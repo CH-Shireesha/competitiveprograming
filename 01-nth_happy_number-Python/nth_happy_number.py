@@ -19,7 +19,7 @@ def fun_nth_happy_number(n):
 			n1 = n1 + 1
 			print(num)
 	return num
-
+	
 def ishappynumber(n1):
 	rem = sum = 0
 	if n1 == 1:
