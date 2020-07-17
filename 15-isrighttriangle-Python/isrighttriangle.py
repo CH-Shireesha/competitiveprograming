@@ -20,7 +20,7 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 		return True
 	if(n == a**2):
 		return True
-	if(l == a**2):
+	if(l == b**2):
 		return True
 	return False
 	pass
