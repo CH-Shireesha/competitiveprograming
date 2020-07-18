@@ -15,15 +15,10 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	a = distance(x1,y1,x2,y2)
 	b = distance(x2,y2,x3,y3)
 	c = distance(x3,y3,x1,y2)
-	m = a + b
-	n = b + c
-	l = c + a
-	print(a,b,c,m,n,l)
-	if (math.isclose(m,(c))):
-		return True
-	if(math.isclose(n, a)):
-		return True
-	if(math.isclose(l,b)):
+	m = max(a,max(b,c))
+	n = a+b+c-m
+	print(a,b,c,m,n,)
+	if (math.isclose(m,n)):
 		return True
 	return False
 	pass
