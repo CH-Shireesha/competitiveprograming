@@ -8,6 +8,10 @@
 import math
 from math import floor
 
+def distance(x1,y1,x2,y2):
+	dist = (math.pow(x1 - x2,2) + (math.pow(y1 - y2,2)))
+	return dist
+
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 	# x1,y1,x2,y2,x3,y3 = abs(x1),abs(y1),abs(x2),abs(y2),abs(x3),abs(y3)
@@ -23,8 +27,5 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	return False
 	pass
 
-def distance(x1,y1,x2,y2):
-	dist = (math.pow(x1 - x2,2) + (math.pow(y1 - y2,2)))
-	return dist
 
 isrighttriangle(-1, 7, 10, -4, 12, -2)
