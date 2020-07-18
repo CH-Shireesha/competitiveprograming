@@ -14,7 +14,6 @@ def distance(x1,y1,x2,y2):
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
-	# x1,y1,x2,y2,x3,y3 = abs(x1),abs(y1),abs(x2),abs(y2),abs(x3),abs(y3)
 	print(x1,y1,x2,y2)
 	a = distance(x1,y1,x2,y2)
 	b = distance(x2,y2,x3,y3)
@@ -24,7 +23,8 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	print(a,b,c,m,n,)
 	if (math.isclose(m,n)):
 		return True
-	return False
+	else:
+		return False
 	pass
 
 
