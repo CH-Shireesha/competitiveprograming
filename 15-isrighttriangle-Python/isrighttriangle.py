@@ -15,21 +15,21 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	a = distance(x1,y1,x2,y2)
 	b = distance(x2,y2,x3,y3)
 	c = distance(x3,y3,x1,y2)
-	m = a**2 + b**2
-	n = b**2 + c**2
-	l = c**2 + a**2
+	m = a + b
+	n = b + c
+	l = c + a
 	print(a**2,b**2,c**2,m,n,l)
-	if (math.isclose(m,(c**2))):
+	if (math.isclose(m,(c))):
 		return True
-	if(math.isclose(n, a**2)):
+	if(math.isclose(n, a)):
 		return True
-	if(math.isclose(l,b**2)):
+	if(math.isclose(l,b)):
 		return True
 	return False
 	pass
 
 def distance(x1,y1,x2,y2):
-	dist = floor(math.sqrt((x2 - x1)**2 + (y2 - y1)**2))
+	dist = floor(((x2 - x1)**2) + ((y2 - y1)**2))
 	return dist
 
 isrighttriangle(-1, 7, 10, -4, 12, -2)
