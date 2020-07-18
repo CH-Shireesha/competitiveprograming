@@ -10,14 +10,20 @@ from math import floor
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
-	# x1,y1,x2,y2,x3,y3 = abs(x1),abs(y1),abs(x2),abs(y2),abs(x3),abs(y3)
+	x1,y1,x2,y2,x3,y3 = abs(x1),abs(y1),abs(x2),abs(y2),abs(x3),abs(y3)
 	print(x1,y1,x2,y2)
 	a = distance(x1,y1,x2,y2)
 	b = distance(x2,y2,x3,y3)
 	c = distance(x3,y3,x1,y2)
-	m = max(a,max(b,c))
-	n = a+b+c-m
-	if (math.isclose(m,n)):
+	m = a + b
+	n = b + c
+	l = c + a
+	print(a,b,c,m,n,l)
+	if (math.isclose(m,(c))):
+		return True
+	if(math.isclose(n, a)):
+		return True
+	if(math.isclose(l,b)):
 		return True
 	return False
 	pass
