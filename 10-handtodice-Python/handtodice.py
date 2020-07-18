@@ -15,5 +15,5 @@ def handtodice(hand):
 		hand = hand//10
 	for i in reversed(l):
 		n.append(i)
-	result = n
+	result = tuple(n)
 	return result
