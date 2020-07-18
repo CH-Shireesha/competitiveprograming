@@ -20,4 +20,5 @@ def dicetoorderedhand(a, b, c):
 	mi = min(a,b,c)
 	x = l[-2]
 	d = m*100 + mi*10 + x 
+	return d
 	pass
