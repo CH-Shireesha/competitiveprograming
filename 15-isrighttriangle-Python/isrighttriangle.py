@@ -6,20 +6,24 @@
 # almostEqual (instead of ==) when comparing floats.
 
 import math
+
 def distance(x1,y1,x2,y2):
-	d =math.pow(x1-x2,2)+math.pow(y1-y2,2)
-	return d
+	dist = (math.pow(x1 - x2,2) + math.pow(y1 - y2,2))
+	return dist
+
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
-	
-	t1=distance(x1,y1,x2,y2)
-	t2=distance(x2,y2,x3,y3)
-	t3=distance(x3,y3,x1,y1)
-	m = max(t1,max(t2,t3))
-	add = t1+t2+t3-m
-	if(math.isclose(m,add)):
+	a = distance(x1,y1,x2,y2)
+	b = distance(x2,y2,x3,y3)
+	c = distance(x3,y3,x1,y2)
+	m = max(a,max(b,c))
+	n = a+b+c-m
+	print(a,b,c,m,n,)
+	if (math.isclose(m,n)):
 		return True
-	
 	else:
-		return False		
+		return False
 	pass
+
+
+isrighttriangle(-1, 7, 10, -4, 12, -2)
