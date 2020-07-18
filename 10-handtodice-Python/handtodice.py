@@ -17,3 +17,4 @@ def handtodice(hand):
 		n.append(i)
 	result = tuple(n)
 	return result
+
