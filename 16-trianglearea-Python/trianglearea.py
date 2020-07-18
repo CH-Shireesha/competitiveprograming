@@ -6,4 +6,7 @@
 
 def trianglearea(s1, s2, s3):
 	# your code goes here
+	side = (s1+s2+s3)/3
+	area = math.sqrt((s*(s-s1)*(s-s2)*(s-s3)))
+	return area
 	pass
