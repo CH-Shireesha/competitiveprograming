@@ -6,4 +6,9 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	return 1
+	if (eggs == 0):
+		return 0
+	elif (eggs/12 > eggs//12):
+		return (eggs//12)+1
+	else:
+		return eggs//12
