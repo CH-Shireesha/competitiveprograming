@@ -8,6 +8,6 @@ import math
 def trianglearea(s1, s2, s3):
 	# your code goes here
 	side = (s1+s2+s3)/3
-	area = math.sqrt((side*(side-s1)*(side-s2)*(side-s3)))
+	area = floor(math.sqrt((side*(side-s1)*(side-s2)*(side-s3))))
 	return area
 	pass
