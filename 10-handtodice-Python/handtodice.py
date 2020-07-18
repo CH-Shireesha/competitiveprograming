@@ -7,4 +7,13 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	l = []
+	n = []
+	while hand > 0:
+		r = hand % 10
+		l.append(r)
+		hand = hand//10
+	for i in reversed(l):
+		n.append(i)
+	result = n
+	return result
