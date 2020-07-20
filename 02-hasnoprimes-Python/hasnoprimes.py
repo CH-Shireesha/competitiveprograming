@@ -15,3 +15,4 @@ def fun_hasnoprimes(l):
 				return False
 	return True
 
+
