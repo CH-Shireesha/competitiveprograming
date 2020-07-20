@@ -5,14 +5,13 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	for i in range(len(L)):
-		n = 1
-		for j in range(len(L[i])-1):
-			print(L[i][j],L[n])
-			if L[i][j] in L[n]:
-				return True
-			else:
-				n = n+1
+	for i in range(len(L)+1):
+		# n = 1
+		for j in range(len(L[i])):
+			for k in range(len(L[i])-1):
+				print(L[i][j],i,j,k)
+				if L[i][j] in L[k]:
+					return True
 	return False
 			
 	pass
