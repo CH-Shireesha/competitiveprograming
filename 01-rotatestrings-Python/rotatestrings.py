@@ -15,3 +15,4 @@ def fun_rotatestrings(s, n):
 		return st
 	return s
 
+fun_rotatestrings("abcd", 1)
