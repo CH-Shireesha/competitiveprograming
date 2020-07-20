@@ -16,7 +16,7 @@ def fun_rotatestrings(s, n):
 	else:
 		n = abs(n)
 		k = s[0:-n]
-		l = s[-n+1:]
+		l = s[-n:]
 		right = k + l
 		print(k,l,right)
 		return right
