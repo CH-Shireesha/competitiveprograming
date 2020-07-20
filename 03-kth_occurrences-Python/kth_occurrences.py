@@ -11,6 +11,6 @@ def fun_kth_occurrences(s, n):
 			if ch not in frequents:
 				frequents.append(ch)
 	print(frequents)
-	return frequents[n-1]
+	return frequents[n]
 
 fun_kth_occurrences("england",1)
