@@ -7,5 +7,26 @@
 
 
 def fixmostlymagicsquare(L):
+	l = []
+	n = []
+	m = []
+	for i in range(len(L)):
+		for j in range((L[0])):
+			l = L[i][j]
+		row = sum(l)
+		for k in range(len(L)):
+			n = L[k][0]
+		col = sum(n)
+		if (row == col):
+			m = l
+		else:
+			n = 1
+			for x in range(len(L)):
+				for y in range((L[0])):
+					L[x][y] = L[x][y] + n
+					fixmostlymagicsquare(L)
+
+
+		
 	pass
-	# Your code goes here
+	# Your code goes here]
