@@ -25,8 +25,8 @@ def fun_wordwrap(s, n):
 		newline = s[:m] + "\n"
 		newstring = newstring + newline
 		s = s[m:]
-		print(s,newline,newstring)
+		# print(s,newline,newstring)
 	return newstring.rstrip("\n")
 
 
-fun_wordwrap("  a b c de fgh ",4)
+# fun_wordwrap("  a b c de fgh ",4)
