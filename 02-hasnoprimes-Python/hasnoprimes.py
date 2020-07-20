@@ -20,3 +20,4 @@ def fun_hasnoprimes(l):
 				return False
 	return True
 
+fun_hasnoprimes([[2]])
