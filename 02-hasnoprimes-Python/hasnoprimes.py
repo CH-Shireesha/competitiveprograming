@@ -3,5 +3,15 @@
 
 
 def fun_hasnoprimes(l):
+	for i in range(len(l)):
+		for j in range(len(l[i])):
+			n = l[i][j]
+			n1 = 1
+			count = 0
+			while (n >= n1):
+				if (n%n1 == 0):
+					count += 1
+			if(count == 2):
+				return False
 	return True
 
