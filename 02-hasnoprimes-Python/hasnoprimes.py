@@ -18,6 +18,6 @@ def fun_hasnoprimes(l):
 				print(n1)
 			if(count <= 2):
 				return False
-	return False
+			return True
 
-print(fun_hasnoprimes([[2]]))
+# print(fun_hasnoprimes([[2]]))
