@@ -5,10 +5,11 @@
 
 
 def fun_kth_occurrences(s, n):
-	frequents =  []
+	frequents =  0
 	for ch in s:
-		while(n == 0):
-			frequents = max(s.count(ch))
+		while(n != 0):
+			print((s.count(ch)))
+			n = n-1
 	print(frequents)
 	return frequents
 
