@@ -20,6 +20,6 @@ def dicetoorderedhand(a, b, c):
 	m = max(a,b,c)
 	mi = min(a,b,c)
 	x = l[1]
-	d = d + [m,mi,x]
-	return d
+	d = d + [m,x,mi]
+	return int(d)
 	pass
