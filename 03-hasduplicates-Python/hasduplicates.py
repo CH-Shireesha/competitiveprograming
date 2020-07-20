@@ -12,6 +12,6 @@ def hasduplicates(L):
 				return True
 			else:
 				n = n+1
-
+	return False
 			
 	pass
