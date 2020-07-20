@@ -8,9 +8,10 @@
 
 def fun_rotatestrings(s, n):
 	if (n > 0):
+		left = s
 		for i in range(n):
-			k = s[0:i]
-			l = s[i:]
+			k = left[0:i]
+			l = left[i:]
 			left = l + k
 			print(k,l,left)
 		return left
