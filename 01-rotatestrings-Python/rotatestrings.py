@@ -22,4 +22,4 @@ def fun_rotatestrings(s, n):
 		print(k,l,right)
 		return right
 
-fun_rotatestrings("abcd", -6)
+fun_rotatestrings("ac323", 8)
