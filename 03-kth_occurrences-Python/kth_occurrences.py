@@ -12,6 +12,6 @@ def fun_kth_occurrences(s, n):
 				frequents.append(ch)
 	frequents.sort()
 	print(frequents)
-	return frequents[n]
+	return frequents[n-1]
 
 fun_kth_occurrences("hello hyderabad a",1)
