@@ -22,9 +22,9 @@ def fun_wordwrap(s, n):
 	newstring = ""
 	while len(s) > n:
 		m = n-1
-		newline = s[:n] + "\n"
+		newline = s[:m] + "\n"
 		newstring = newstring + newline
-		s = s[n:]
+		s = s[m:]
 		print(s,newline,newstring)
 	return newstring
 
