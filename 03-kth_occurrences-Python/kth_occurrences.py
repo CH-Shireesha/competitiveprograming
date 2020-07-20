@@ -5,6 +5,13 @@
 
 
 def fun_kth_occurrences(s, n):
+	frequents =  []
+	for i in range(n):
+		for ch in s:
+			if s.count(ch) > 1:
+				if ch not in frequents:
+					frequents.append(ch)
+
 	return 'a'
 
 
