@@ -10,11 +10,11 @@ def hasduplicates(L):
 		for j in i:
 			lst.append(j)
 	l = set(lst)
-	print(l,lst)	
+	# print(l,lst)	
 	if (len(l) != len(lst)):
 		return True
 	return False
 			
 	pass
 
-print(hasduplicates([[2,7,6],[9,5,1],[4,3,8]]))
+# print(hasduplicates([[2,7,6],[9,5,1],[4,3,8]]))
