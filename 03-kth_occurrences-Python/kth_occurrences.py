@@ -6,7 +6,7 @@
 
 def fun_kth_occurrences(s, n):
 	frequents =  []
-	for i in range(n):
+	for i in range(len(s)):
 		for ch in s:
 			if ch not in frequents:
 				frequents.append(ch)
