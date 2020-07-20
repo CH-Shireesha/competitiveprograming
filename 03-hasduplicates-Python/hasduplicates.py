@@ -8,6 +8,7 @@ def hasduplicates(L):
 	for i in range(len(L)):
 		n = 1
 		for j in range(len(L[i])-1):
+			print(L[i][j],L[n])
 			if L[i][j] in L[n]:
 				return True
 			else:
