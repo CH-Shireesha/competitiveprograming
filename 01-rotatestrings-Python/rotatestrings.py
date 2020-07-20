@@ -10,9 +10,15 @@ def fun_rotatestrings(s, n):
 	if (n > 0):
 		k = s[0:n]
 		l = s[n:]
-		st = l + k
-		print(st)
-		return st
-	return s
+		left = l + k
+		print(left)
+		return left
+	else:
+		n = abs(n)
+		k = s[0:-n]
+		l = s[-n+1:]
+		right = k + l
+		print(k,l,right)
+		return right
 
-fun_rotatestrings("abcd", 1)
+fun_rotatestrings("abcd", -1)
