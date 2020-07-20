@@ -11,14 +11,14 @@ def fun_rotatestrings(s, n):
 		k = s[0:n]
 		l = s[n:]
 		left = l + k
-		print(left)
+		# print(left)
 		return left
 	else:
 		n = abs(n)
 		k = s[0:-n]
 		l = s[-n:]
 		right = l + k
-		print(k,l,right)
+		# print(k,l,right)
 		return right
 
-fun_rotatestrings("abcd", -1)
+# fun_rotatestrings("abcd", -1)
