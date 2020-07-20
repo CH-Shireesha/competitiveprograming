@@ -9,7 +9,7 @@ def fun_hasnoprimes(l):
 			n1 = 1
 			count = 0
 			print("-------",n)
-			while (n > n1):
+			while (n >= n1):
 				print(n,n1,n%n1)
 				if (n%n1 == 0):
 					count += 1
@@ -17,7 +17,7 @@ def fun_hasnoprimes(l):
 					print(count,n1)
 				n1 = n1 + 1
 				print(n1)
-			if(count < 2):
+			if(count <= 2):
 				return False
 	return True
 
