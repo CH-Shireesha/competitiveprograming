@@ -23,7 +23,7 @@ def fun_wordwrap(s, n):
 	while len(s) > n:
 		newline = s[:n] + "\n"
 		newstring = newstring + newline
-		s = s[n+1:]
+		s = s[n:]
 		print(s,newline,newstring)
 	return newstring
 
