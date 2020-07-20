@@ -22,7 +22,7 @@ def fun_wordwrap(s, n):
 	sub = s[:n]
 	for i in range(len(s)):
 		su = s[n:n]
-	print(s,sub)
+	print(s,sub,su)
 	return ""
 
 
