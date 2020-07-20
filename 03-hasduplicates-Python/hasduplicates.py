@@ -5,10 +5,10 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	for i in range(len(l)):
+	for i in range(len(L)):
 		n = 1
-		for j in range(len(l[i])):
-			if l[i] in l [n]:
+		for j in range(len(L[i])):
+			if L[i] in L[n]:
 				return True
 			else:
 				n = n+1
