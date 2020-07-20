@@ -24,4 +24,4 @@ def fun_wordwrap(s, n):
 	return ""
 
 
- 
+fun_wordwrap("  a b c de fgh ",4)
