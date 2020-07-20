@@ -17,7 +17,7 @@ def fun_rotatestrings(s, n):
 	else:
 		n = abs(n)
 		right = fun_rotatestrings(s,len(s)-n)
-		print(k,l,right)
+		print(right)
 		return right
 
-fun_rotatestrings("ac323", 8)
+fun_rotatestrings("abcd", -6)
