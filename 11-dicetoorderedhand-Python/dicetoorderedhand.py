@@ -22,4 +22,5 @@ def dicetoorderedhand(a, b, c):
 	x = l[1]
 	d = d + [m,x,mi]
 	return int("".join(map(str,d)))
-	pass
+
+
