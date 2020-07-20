@@ -19,8 +19,9 @@
 def fun_wordwrap(s, n):
 	s = s.strip()
 	s = s.replace(" ","-")
+	sub = s[:n]
 	for i in range(len(s)):
-		sub = s[:n]
+		su = s[n:n]
 	print(s,sub)
 	return ""
 
