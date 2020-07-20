@@ -13,7 +13,11 @@ def fun_rotatestrings(s, n):
 			l = s[i:]
 			left = l + k
 		return left
-	else:
+	elif(n < 0):
 		n = abs(n)
 		return fun_rotatestrings(s,len(s)-n)
+	else:
+		k = s[0:n]
+		l = s[n:]
+		return l + k
 
