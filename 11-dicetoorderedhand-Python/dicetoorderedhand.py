@@ -14,11 +14,12 @@
 def dicetoorderedhand(a, b, c):
 	# your code goes here
 	l = []
+	d = []
 	l = l + [a,b,c]
 	l.sort()
 	m = max(a,b,c)
 	mi = min(a,b,c)
 	x = l[1]
-	d = m*100 + mi*10 + x 
+	d = d + [m,mi,x]
 	return d
 	pass
