@@ -15,7 +15,8 @@ def fun_hasnoprimes(l):
 					count += 1
 					n1 = n1+1
 					# print(count,n1)
-				n1 = n1 + 1
+				else:
+					n1 = n1 + 1
 				# print(n1)
 			if(count <= 2):
 				return False
