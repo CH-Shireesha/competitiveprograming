@@ -25,7 +25,7 @@ def fun_wordwrap(s, n):
 		newstring = newstring + newline
 		s = s[n+1:]
 		print(s,newline,newstring)
-	return ""
+	return newstring
 
 
 fun_wordwrap("  a b c de fgh ",4)
