@@ -7,7 +7,7 @@
 
 
 def fun_rotatestrings(s, n):
-	if (n > 0):
+	if (n > 0 and len(s) < n):
 		for i in range(len(s)-1):
 			k = s[0:i]
 			l = s[i:]
