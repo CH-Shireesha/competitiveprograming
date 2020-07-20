@@ -13,4 +13,4 @@ def fun_kth_occurrences(s, n):
 	print(frequents)
 	return frequents[n]
 
-fun_kth_occurrences("england",1)
+fun_kth_occurrences("hello hyderabad a",1)
