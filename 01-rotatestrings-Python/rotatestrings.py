@@ -8,10 +8,11 @@
 
 def fun_rotatestrings(s, n):
 	if (n > 0):
-		k = s[0:n]
-		l = s[n:]
-		left = l + k
-		print(k,l,left)
+		for i in range(n):
+			k = s[0:i]
+			l = s[i:]
+			left = l + k
+			print(k,l,left)
 		return left
 	else:
 		n = abs(n)
