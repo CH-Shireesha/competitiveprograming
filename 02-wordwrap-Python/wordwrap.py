@@ -24,7 +24,6 @@ def fun_wordwrap(s, n):
 		newline = s[:n] + "\n"
 		newstring = newstring + newline
 		s = s[n:]
-		# print(s,newline,newstring)
 	return newstring.rstrip("\n")
 
 
