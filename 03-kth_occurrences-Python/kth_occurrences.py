@@ -6,12 +6,10 @@
 
 def fun_kth_occurrences(s, n):
 	frequents =  []
-	for i in range(len(s)):
-		for ch in s:
-			if ch not in frequents:
-				frequents.append(ch)
-	frequents.sort()
+	for ch in s:
+		while(n == 0):
+			frequents = max(s.count(ch))
 	print(frequents)
-	return frequents[n-1]
+	return frequents
 
 fun_kth_occurrences("hello hyderabad a",1)
