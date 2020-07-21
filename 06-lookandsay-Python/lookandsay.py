@@ -12,10 +12,11 @@ def lookandsay(a):
 	temp = a[0]
 	tup = (1,temp)
 	l = []
+	val = 1
 	for i in a[1:]:
 		if (temp == i):
 			# print(l,val,temp,tup)
-			tup = (tup[0]+1,temp)
+			tup = (val+1,temp)
 			temp = i
 		else:
 			# tup = (1,temp)
