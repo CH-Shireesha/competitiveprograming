@@ -25,5 +25,5 @@ def fun_getaverage(s):
 	else:
 		return sum/c
 
-fun_getaverage("13,a,1")
+# print(fun_getaverage("13,a,1"))
 
