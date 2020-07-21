@@ -10,9 +10,8 @@ def fun_kth_occurrences(s, n):
 		while(n != 0):
 			print((s.count(ch)))
 			n = n-1
-			if ch in frequents:
+			if ch not in frequents:
 				frequents.append(ch)
-		print(ch)
 	print(frequents)
 	return frequents
 
