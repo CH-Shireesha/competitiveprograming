@@ -5,14 +5,14 @@
 
 
 def fun_kth_occurrences(s, n):
-	frequents =  []
+	d = {}
 	for ch in s:
-		while(n != 0):
-			print((s.count(ch)))
-			n = n-1
-			if ch not in frequents:
-				frequents.append(ch)
+		if ch not in d.keys():
+			d[ch] = 1
+		else:
+			d[ch] += 1
+	frequents = sorted(d.items())
 	print(frequents)
-	return frequents[-1]
+	return frequents
 
 fun_kth_occurrences("hello hyderabad a",1)
