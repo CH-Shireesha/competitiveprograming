@@ -17,7 +17,7 @@ def lookandsay(a):
 		print(temp, i)
 		if (temp == i):
 			# print(l,val,temp,tup)
-			tup = (tup[0],i)
+			tup = (tup[0]+1,i)
 		else:
 			l.append(tup)
 			print(l, tup)
