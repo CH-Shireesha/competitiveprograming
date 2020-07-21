@@ -16,13 +16,14 @@ def fun_recursion_onlyevendigits(l):
 		num = l[0]
 		if(isEven(num)):
 			newlist.append(num)
-			return [] + fun_recursion_onlyevendigits(l[1:])
-		else:
-			newlist.append(0)
-			print (newlist)
+			return newlist + fun_recursion_onlyevendigits(l[1:])
+		
 		
 
 def isEven(num):
-	if (num < 2):
-		return (num%2 == 0)
-	return(isEven(num -2))
+	if(num%2 == 0):
+		return num
+	return(num//10)
+
+print(isEven(43))
+print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
