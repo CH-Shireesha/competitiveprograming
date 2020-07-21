@@ -15,7 +15,7 @@ def fun_getaverage(s):
 	c = 0
 	for i in range(len(s)):
 		try:
-			if (int(s[i]) > 0):
+			if (int(s[i]) >= 0):
 				c = c + 1
 				sum += int(s[i])
 		except:
