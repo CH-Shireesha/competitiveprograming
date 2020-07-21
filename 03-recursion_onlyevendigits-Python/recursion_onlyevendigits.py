@@ -8,7 +8,7 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
-def fun_recursion_onlyevendigits(l):
+def fun_recursion_onlyevendigits(l, newlist=None):
 	newlist = []
 	print("l", l)
 	if(len(l) == 0):
@@ -17,7 +17,7 @@ def fun_recursion_onlyevendigits(l):
 		num = l[0]
 		print("l",l,"num",num,"even",isEven(num))
 		newlist.append(isEven(num))
-		newlist + fun_recursion_onlyevendigits(l[1:len(l)-1])
+		newlist + fun_recursion_onlyevendigits(l[1:])
 	return newlist
 		
 		
