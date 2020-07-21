@@ -18,9 +18,10 @@ def lookandsay(a):
 	for i in a[1:]:
 		if (temp == i):
 			tup = (val+1,temp)
+			temp = a[val+1]
 			l.append(tup)
 		else:
-			tup = (val,i)
+			tup = (val,temp)
 	print(l)
 	return l
 
