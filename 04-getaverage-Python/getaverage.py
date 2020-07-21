@@ -9,6 +9,7 @@
 
 
 
-def fun_getaverage(s): 
+def fun_getaverage(s):
+	s = s.split(",") 
 	return 0.0
 
