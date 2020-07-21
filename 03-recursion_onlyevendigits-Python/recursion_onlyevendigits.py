@@ -31,7 +31,10 @@ def isEven(num):
 		if(n%2 == 0):
 			l = n
 			print(l)
-			return isEven(num//10)
+			isEven(num//10)
+			return l
+		else:
+			isEven(num//10)
 
 
 print(isEven(23265))
