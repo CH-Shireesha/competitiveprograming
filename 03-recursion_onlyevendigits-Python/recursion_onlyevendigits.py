@@ -10,28 +10,27 @@
 
 def fun_recursion_onlyevendigits(l):
 	newlist = []
+	print("l", l)
 	if(len(l) == 0):
-		return []
+		return newlist
 	else:
 		num = l[0]
-		if(isEven(num)):
-			newlist.append(num)
-			fun_recursion_onlyevendigits(l[1:])
-			return newlist
+		# newlist.append(isEven(num))
+		fun_recursion_onlyevendigits(l[1:])
+	return newlist
 		
 		
 
 def isEven(num):
-	l = []
 	if(num == 0):
 		return 0
 	if(num%2 == 0):
-		l.append(num%10)
-		isEven(num/10) 
-		return l
+		return (num%10) + isEven(num//10)*10
+	else:
+		return isEven(num//10)
 
 			
 
 
-print(isEven(23265))
+print(isEven(5),"---")
 print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
