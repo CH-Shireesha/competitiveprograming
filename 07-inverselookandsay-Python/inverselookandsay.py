@@ -12,7 +12,8 @@ def inverselookandsay(a):
 	# Your code goes here
 	l = []
 	for i in a:
+		if (len(i) == 0):
+			break
 		for j in range(i[0]):
 			l.append(i[1])
 	return l
-	pass
