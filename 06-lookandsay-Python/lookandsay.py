@@ -9,6 +9,8 @@
 
 def lookandsay(a):
 	# Your code goes here
+	if (len(a) == 0):
+		return a
 	temp = a[0]
 	tup = (1,temp)
 	l = []
@@ -23,4 +25,4 @@ def lookandsay(a):
 	l.append(tup)
 	return l
 
-lookandsay([3,3,8,3,3,3])
+# lookandsay([3,3,8,3,3,3])
