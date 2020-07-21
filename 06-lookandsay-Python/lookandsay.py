@@ -15,7 +15,7 @@ def lookandsay(a):
 			d[i] = 1
 		else:
 			d[i] += 1
-	res = [(d.items(),d.keys())]
+	res = [d.items()]
 	print(res)
 	return res
 
