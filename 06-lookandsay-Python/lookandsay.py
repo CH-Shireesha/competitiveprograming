@@ -17,10 +17,10 @@ def lookandsay(a):
 		if (temp == i):
 			# print(l,val,temp,tup)
 			tup = (val+1,temp)
-			temp = i
 		else:
 			l.append(tup)
 			tup = (1,temp)
+		temp = i
 			# print("------else",tup,l)
 	print(l)
 	return l
