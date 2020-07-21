@@ -11,7 +11,6 @@ def fun_recursions_alternatingsum(l):
 	elif(n == 1):
 		return l[0]
 	else:
-		# print(fun_recursions_alternatingsum(l[1:]),fun_recursions_alternatingsum(l[2:]))
 		return l[0] - l[1] + fun_recursions_alternatingsum(l[2:])
 
 print(fun_recursions_alternatingsum([1,2,3,4,5]))
