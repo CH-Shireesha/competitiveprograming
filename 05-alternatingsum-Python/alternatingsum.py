@@ -14,8 +14,8 @@ def fun_alternatingsum(a):
 		return a[0]
 	else:
 		n = 0
-		while(n < len(a)-2):
-			sum = a[i]-a[i+1]
+		while(n < len(a)-1):
+			sum += a[i]-a[i+1]
 			i = i+2
 			n = n+2
 		return sum
