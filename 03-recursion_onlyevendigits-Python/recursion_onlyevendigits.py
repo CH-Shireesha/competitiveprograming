@@ -15,8 +15,9 @@ def fun_recursion_onlyevendigits(l):
 		return newlist
 	else:
 		num = l[0]
+		print("l",l,"num",num,"even",isEven(num))
 		newlist.append(isEven(num))
-		fun_recursion_onlyevendigits(l[1:])
+		newlist + fun_recursion_onlyevendigits(l[1:])
 	return newlist
 		
 		
