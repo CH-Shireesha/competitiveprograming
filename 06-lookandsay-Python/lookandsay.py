@@ -9,16 +9,19 @@
 
 def lookandsay(a):
 	# Your code goes here
-	d = {}
+	temp = a[0]
+	tup = (1,temp)
+	l = []
 	res = []
-	for i in a:
-		if i not in d:
-			d[i] = 1
+	c = 0
+	for i in a[1:]:
+		if (temp == i):
+			tup = (i+1,temp)
+			temp = i
+			l.append(tup)
 		else:
-			d[i] += 1
-	for key,val in d.items():
-		res.append((val,key))
-	print(res)
-	return res
+			tup = (1,i)
+	print(l)
+	return l
 
-lookandsay([3,3,8,33,3,3])
+lookandsay([3,3,8,3,3,3])
