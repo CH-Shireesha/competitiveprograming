@@ -10,6 +10,20 @@
 
 
 def fun_getaverage(s):
-	s = s.split(",") 
-	return 0.0
+	s = s.split(",")
+	sum = 0
+	c = 0
+	for i in range(len(s)):
+		try:
+			if (int(s[i]) > 0):
+				c = c + 1
+				sum += int(s[i])
+		except:
+			ValueError
+	if (c == 0):
+		return 0.0
+	else:
+		return sum/c
+
+fun_getaverage("13,a,1")
 
