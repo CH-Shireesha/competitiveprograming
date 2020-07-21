@@ -11,7 +11,7 @@ def fun_kth_occurrences(s, n):
 			d[ch] = 1
 		else:
 			d[ch] += 1
-	frequents = sorted(d.items(), key = lambda x:x[1])
+	frequents = sorted(d.items(), key = lambda x:x[1], reverse = True)
 	print(frequents)
 	return frequents
 
