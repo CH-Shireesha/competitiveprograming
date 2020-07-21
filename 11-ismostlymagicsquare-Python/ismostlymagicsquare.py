@@ -15,4 +15,17 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
+	for i in range(len(a)):
+		l = []
+		n = []
+		for j in range(len(a[0])):
+			l.append(a[i][j])
+		row = sum(l)
+		for k in range(len(a)):
+			n.append(a[k][0])
+		col = sum(n)
+		if(row != col):
+			return False
+	if(row == col):
+		return True
 	pass
