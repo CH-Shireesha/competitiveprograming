@@ -21,4 +21,4 @@ def lookandsay(a):
 	print(res)
 	return res
 
-lookandsay([1,1,1])
+lookandsay([3,3,8,33,3,3])
