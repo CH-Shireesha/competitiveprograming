@@ -15,10 +15,11 @@ def fun_recursion_onlyevendigits(l):
 	else:
 		num = l[0]
 		if(isEven(num)):
-			newlist.append(n)
-			newlist += fun_recursion_onlyevendigits(l[1:])
+			newlist.append(num)
+			return [] + fun_recursion_onlyevendigits(l[1:])
 		else:
 			newlist.append(0)
+			print (newlist)
 		
 
 def isEven(num):
