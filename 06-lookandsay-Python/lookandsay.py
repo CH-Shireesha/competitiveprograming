@@ -9,4 +9,15 @@
 
 def lookandsay(a):
 	# Your code goes here
+	l = []
+	res = []
+	for i in a:
+		if i not in l:
+			l.append(i)
+			c = c + 1
+		res += [(c,i)]
+	print(res)
+	return res
+
+
 	pass
