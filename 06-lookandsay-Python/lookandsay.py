@@ -16,16 +16,12 @@ def lookandsay(a):
 	for i in a[1:]:
 		print(temp, i)
 		if (temp == i):
-			# print(l,val,temp,tup)
 			tup = (tup[0]+1,i)
 		else:
 			l.append(tup)
-			print(l, tup)
 			tup = (1,i)
 		temp = i
-			# print("------else",tup,l)
 	l.append(tup)
-	print(l)
 	return l
 
 lookandsay([3,3,8,3,3,3])
