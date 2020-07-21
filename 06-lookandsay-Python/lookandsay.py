@@ -10,12 +10,14 @@
 def lookandsay(a):
 	# Your code goes here
 	d = {}
+	res = []
 	for i in a:
 		if i not in d:
 			d[i] = 1
 		else:
 			d[i] += 1
-	res = d
+	for key,val in d.items():
+		res.append((val,key))
 	print(res)
 	return res
 
