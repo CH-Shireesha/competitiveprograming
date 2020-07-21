@@ -26,9 +26,9 @@ def isEven(num):
 		if(num%2 == 0):
 			return num
 	else:
-		num = num % 10
+		n = num % 10
 		print(num)
-		if(num%2 == 0):
+		if(n%2 == 0):
 			return isEven(num//10)
 
 
