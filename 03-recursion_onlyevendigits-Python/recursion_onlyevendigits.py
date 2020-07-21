@@ -9,6 +9,8 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 def fun_recursion_onlyevendigits(l, newlist=None):
+	if(newlist is None):
+		newlist = []
 	if(len(l) == 0):
 		return newlist
 	else:
