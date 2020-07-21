@@ -16,10 +16,11 @@ def lookandsay(a):
 	for i in a[1:]:
 		if (temp == i):
 			# print(l,val,temp,tup)
-			tup = (val+1,temp)
+			tup = (val+1,i)
 		else:
+			print(l, tup)
 			l.append(tup)
-			tup = (1,temp)
+			tup = (1,i)
 		temp = i
 			# print("------else",tup,l)
 	print(l)
