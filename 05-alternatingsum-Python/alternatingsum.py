@@ -7,17 +7,17 @@
 
 def fun_alternatingsum(a):
 	sum = 0
-	i = 0
 	if (len(a) == 0):
 		return 0
 	elif(len(a) == 1):
 		return a[0]
 	else:
-		n = 0
-		while(n < len(a)-1):
-			sum += a[i]-a[i+1]
-			i = i+2
-			n = n+2
+		for i in range(0,len(a)):
+			if(i%2):
+				sum += a[i]
+			else:
+				sum -= a[i]
 		return sum
+
 
 
