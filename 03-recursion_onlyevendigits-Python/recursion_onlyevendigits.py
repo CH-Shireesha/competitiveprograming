@@ -22,9 +22,15 @@ def fun_recursion_onlyevendigits(l):
 		
 
 def isEven(num):
-	if(num%2 == 0):
-		return num
-	return isEven(num//10)
+	if(num < 9):
+		if(num%2 == 0):
+			return num
+	else:
+		num = num % 10
+		print(num)
+		if(num%2 == 0):
+			return isEven(num//10)
+
 
 print(isEven(23265))
 print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
