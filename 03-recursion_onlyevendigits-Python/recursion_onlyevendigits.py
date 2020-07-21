@@ -9,15 +9,13 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 def fun_recursion_onlyevendigits(l, newlist=None):
-	newlist = []
-	print("l", l)
 	if(len(l) == 0):
 		return newlist
 	else:
 		num = l[0]
-		print("l",l,"num",num,"even",isEven(num))
+		# print("l",l,"num",num,"even",isEven(num))
 		newlist.append(isEven(num))
-		newlist + fun_recursion_onlyevendigits(l[1:])
+		fun_recursion_onlyevendigits(l[1:], newlist)
 	return newlist
 		
 		
@@ -33,5 +31,5 @@ def isEven(num):
 			
 
 
-print(isEven(5),"---")
-print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
+# print(isEven(5),"---")
+# print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
