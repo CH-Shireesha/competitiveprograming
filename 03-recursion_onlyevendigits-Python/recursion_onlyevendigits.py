@@ -22,14 +22,18 @@ def fun_recursion_onlyevendigits(l):
 		
 
 def isEven(num):
+	l = []
 	if(num < 9):
 		if(num%2 == 0):
 			return num
 	else:
 		n = num % 10
-		print(num)
 		if(n%2 == 0):
+			l = n
 			return isEven(num//10)
+		else:
+			return isEven(num//10)
+		print(l)
 
 
 print(isEven(23265))
