@@ -18,8 +18,8 @@ def lookandsay(a):
 			# print(l,val,temp,tup)
 			tup = (val+1,i)
 		else:
-			print(l, tup)
 			l.append(tup)
+			print(l, tup)
 			tup = (1,i)
 		temp = i
 			# print("------else",tup,l)
