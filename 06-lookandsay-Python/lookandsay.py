@@ -14,6 +14,7 @@ def lookandsay(a):
 	l = []
 	val = 1
 	for i in a[1:]:
+		print(temp, i)
 		if (temp == i):
 			# print(l,val,temp,tup)
 			tup = (val+1,i)
