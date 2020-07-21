@@ -10,17 +10,17 @@
 def lookandsay(a):
 	# Your code goes here
 	temp = a[0]
-	tup = (1,temp)
+	val = 1
+	tup = (val,temp)
 	l = []
 	res = []
 	c = 0
 	for i in a[1:]:
 		if (temp == i):
-			tup = (i+1,temp)
-			temp = i
+			tup = (val+1,temp)
 			l.append(tup)
 		else:
-			tup = (1,i)
+			tup = (val,i)
 	print(l)
 	return l
 
