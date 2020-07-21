@@ -27,7 +27,8 @@ def isEven(num):
 		return 0
 	if(num%2 == 0):
 		l.append(num%10)
-		return isEven(num/10) 
+		isEven(num/10) 
+		return l
 
 			
 
