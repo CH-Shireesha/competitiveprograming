@@ -6,4 +6,8 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
+	temp = []
+	while(n > 0):
+		temp.append(n%10)
+		n //= 10
 	pass
