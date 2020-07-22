@@ -14,19 +14,22 @@ def longestdigitrun(n):
 		n //= 10
 	print(a)
 	temp = a[0]
-	l = []
+	returnval = a[0]
+	c = 0
+	tempc = 0
 	t = (1,temp)
 	for i in (a[1:]):
 		if (temp == i):
-			t = (t[0]+1,i)
+			tempc += 1
 		else:
-			l.append(t)
-			t = (1,i)
+			if(c < tempc):
+				c = tempc
+				returnval = temp
+				tempc = 0
+			elif(c == tempc):
+				returnval = min(temp,i)
 		temp = i
-	l.append(t)
-	sorted(t,reverse =True)
-	m = max(l)
-	print(l,m[1])
+	print(returnval)
 	pass
 
-longestdigitrun(-677886)
+longestdigitrun(-6777886)
