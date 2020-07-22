@@ -6,13 +6,12 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
-	d = {}
 	a = []
 	n = abs(n)
 	while(n > 0):
 		a.append(n%10)
 		n //= 10
-	print(a)
+	# print(a)
 	temp = a[0]
 	returnval = a[0]
 	c = 0
@@ -25,11 +24,12 @@ def longestdigitrun(n):
 			if(c < tempc):
 				c = tempc
 				returnval = temp
-				tempc = 0
 			elif(c == tempc):
 				returnval = min(temp,i)
+			tempc = 0
 		temp = i
 	print(returnval)
+	return returnval
 	pass
 
-longestdigitrun(-6777886)
+longestdigitrun(-677886)
