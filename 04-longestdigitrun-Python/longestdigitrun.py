@@ -21,6 +21,7 @@ def longestdigitrun(n):
 			t = (t[0]+1,i)
 		else:
 			t = (1,i)
+		temp = i
 	print(t)
 	pass
 
