@@ -20,9 +20,11 @@ def longestdigitrun(n):
 		if (temp == i):
 			t = (t[0]+1,i)
 		else:
+			l.append(t)
 			t = (1,i)
 		temp = i
-	print(t)
+	l.append(t)
+	print(l)
 	pass
 
 longestdigitrun(-677886)
