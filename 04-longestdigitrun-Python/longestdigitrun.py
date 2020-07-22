@@ -14,6 +14,7 @@ def longestdigitrun(n):
 		n //= 10
 	print(a)
 	temp = a[0]
+	l = []
 	t = (1,temp)
 	for i in (a[1:]):
 		if (temp == i):
