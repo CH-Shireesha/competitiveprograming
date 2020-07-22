@@ -11,26 +11,31 @@
 def fun_nth_smithnumber(n):
     j = 1
     while(j < n):
-        num = j
-        sum = 0
-        i = 0
-        while(primees[i] <= n/2):
-            while(j%primes[i] == 0):
-                p = prime[i]
-                n = n/p
-                while p > 0:
-                    sum += (p%10)
-                    p //= 10
-            i = i+1
-        if not n == 1 and not n == num:
-            while(j > 0):
-                sum += j%10
-                j //= 10
-        sumd = 0
-        while j > 0:
-            sumd += num%10
+        if (isSmith(j)):
+            print(j)
+        i = i+1
+    return j
+
+def isSmith(j):
+    num = j
+    sum = 0
+    i = 0
+    while(primes[i] <= j/2):
+        while(j%primes[i] == 0):
+            p = primes[i]
+            j = j/p
+            while(p > 0):
+                sum += (p%10)
+                p //= 10
+        i = i+1
+    if(not j == 1 and not j == num):
+        while(j > 0):
+            sum += num%10
             num //= 10
-        return 
+    sumd = 0
+    while(j > 0):
+        sumd += num%10
+        num //= 10
+    return (sum == sumd)
 
-
-    return 1
+print(fun_nth_smithnumber(1))
