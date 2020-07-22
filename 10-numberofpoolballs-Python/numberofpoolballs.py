@@ -9,4 +9,13 @@
 
 def numberofpoolballs(rows):
 	# Your code goes here
+	n = 1
+	num = 1
+	for i in range(1,rows+1):
+		n = n + 1
+		num = num + n
+	print(num)
+
 	pass
+
+numberofpoolballs(3)
