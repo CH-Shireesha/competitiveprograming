@@ -17,3 +17,4 @@ def fun_carrylessadd(x, y):
 
 	return 0
 
+fun_carrylessadd(18,27)
