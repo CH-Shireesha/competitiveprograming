@@ -13,13 +13,13 @@ def longestdigitrun(n):
 		a.append(n%10)
 		n //= 10
 	print(a)
-	t = []
 	temp = a[0]
+	t = (1,temp)
 	for i in (a[1:]):
 		if (temp == i):
-			t = t+1
+			t = (t[0]+1,i)
 		else:
-			t = 1
+			t = (1,i)
 	print(t)
 	pass
 
