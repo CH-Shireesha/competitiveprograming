@@ -7,7 +7,7 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
-
+primes = []
 def fun_nth_smithnumber(n):
     j = 1
     while(j < n):
@@ -38,4 +38,6 @@ def isSmith(j):
         num //= 10
     return (sum == sumd)
 
+
+print(isSmith(4))
 print(fun_nth_smithnumber(1))
