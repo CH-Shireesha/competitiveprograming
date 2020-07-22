@@ -14,8 +14,8 @@ def numberofpoolballs(rows):
 	for i in range(1,rows):
 		n = n + 1
 		num = num + n
-		print(num)
+	return num
 
 	pass
 
-numberofpoolballs(3)
+# numberofpoolballs(10)
