@@ -15,18 +15,20 @@ def longestdigitrun(n):
 	temp = a[0]
 	returnval = a[0]
 	c = 0
-	tempc = 0
-	t = (1,temp)
+	tempc = 1
 	for i in (a[1:]):
 		if (temp == i):
 			tempc += 1
+			print(temp,tempc,i)
 		else:
 			if(c < tempc):
 				c = tempc
 				returnval = temp
+				print("inif",c,tempc,returnval)
 			elif(c == tempc):
-				returnval = min(temp,i)
-			tempc = 0
+				returnval = min(returnval, i)
+				print("inelse",returnval,c,tempc,temp,i)
+			tempc = 1
 		temp = i
 	print(returnval)
 	return returnval
