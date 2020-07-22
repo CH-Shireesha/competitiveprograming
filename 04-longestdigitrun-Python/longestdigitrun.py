@@ -24,8 +24,9 @@ def longestdigitrun(n):
 			t = (1,i)
 		temp = i
 	l.append(t)
+	sorted(t,reverse =True)
 	m = max(l)
-	print(l,m)
+	print(l,m[1])
 	pass
 
 longestdigitrun(-677886)
