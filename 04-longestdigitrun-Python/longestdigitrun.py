@@ -11,6 +11,7 @@ def longestdigitrun(n):
 	while(n > 0):
 		a.append(n%10)
 		n //= 10
+	# a.reverse()
 	# print(a)
 	temp = a[0]
 	returnval = a[0]
@@ -30,8 +31,10 @@ def longestdigitrun(n):
 				# print("inelse",returnval,c,tempc,temp,i)
 			tempc = 1
 		temp = i
-	# print(returnval)
+	if(c == 1 and temp < returnval):
+		returnval = temp
+	# print(temp,i,c,tempc)
 	return returnval
 	pass
 
-# longestdigitrun(-677886)
+print(longestdigitrun(12345))
