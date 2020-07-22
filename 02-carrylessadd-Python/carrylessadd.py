@@ -14,8 +14,8 @@ def fun_carrylessadd(x, y):
 		st = st + str(sum)
 		x = x//10
 		y = y//10
-	print(st)
+	print(st[::-1])
 
 	return 0
 
-fun_carrylessadd(18,27)
+fun_carrylessadd(1,2)
