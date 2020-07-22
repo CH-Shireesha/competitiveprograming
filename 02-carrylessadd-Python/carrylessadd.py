@@ -6,5 +6,14 @@
 
 
 def fun_carrylessadd(x, y):
+	sum = 0
+	st = ""
+	while (x > 0):
+		n = (x%10) + (y%10)
+		sum = n%10
+		st = st + str(sum)
+		x = x//10
+	print(st)
+
 	return 0
 
