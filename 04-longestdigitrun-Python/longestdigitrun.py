@@ -33,7 +33,6 @@ def longestdigitrun(n):
 		temp = i
 	if(c == 1 and temp < returnval):
 		returnval = temp
-	# print(temp,i,c,tempc)
 	return returnval
 	pass
 
