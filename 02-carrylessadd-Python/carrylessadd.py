@@ -13,6 +13,7 @@ def fun_carrylessadd(x, y):
 		sum = n%10
 		st = st + str(sum)
 		x = x//10
+		y = y//10
 	print(st)
 
 	return 0
