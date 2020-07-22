@@ -7,11 +7,13 @@
 
 def multipolynomials(p1, p2):
 	# Your code goes here
-	poly = []
+	m = len(p1)
+	n = len(p2)
+	poly = [0] * (m + n -1)
 	for i in range(len(p1)):
 		for j in range(len(p2)):
-			poly[i] += p1[i] * p2[j]
+			poly[i+j] += p1[i] * p2[j]
 	print(poly)
 	return poly
 
-	pass
+multipolynomials([2,0,3],[4,5])
