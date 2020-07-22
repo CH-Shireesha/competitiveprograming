@@ -19,19 +19,19 @@ def longestdigitrun(n):
 	for i in (a[1:]):
 		if (temp == i):
 			tempc += 1
-			print(temp,tempc,i)
+			# print(temp,tempc,i)
 		else:
 			if(c < tempc):
 				c = tempc
 				returnval = temp
-				print("inif",c,tempc,returnval)
+				# print("inif",c,tempc,returnval)
 			elif(c == tempc):
-				returnval = min(returnval, i)
-				print("inelse",returnval,c,tempc,temp,i)
+				returnval = min(returnval, temp)
+				# print("inelse",returnval,c,tempc,temp,i)
 			tempc = 1
 		temp = i
-	print(returnval)
+	# print(returnval)
 	return returnval
 	pass
 
-longestdigitrun(-677886)
+# longestdigitrun(-677886)
