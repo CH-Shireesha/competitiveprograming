@@ -33,4 +33,4 @@ def ispowerful(n):
 	return False
 			
 print(ispowerful(5))
-print(nthpowerfulnumber(10))
+print(nthpowerfulnumber(2))
