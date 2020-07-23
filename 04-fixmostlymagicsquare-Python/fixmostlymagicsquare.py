@@ -31,7 +31,7 @@ def fixmostlymagicsquare(L):
 		m .append(sum)
 	for y in range(len(m)):
 		if(m.count(m[y]) == 1):
-			p = 1
+			p = i
 	res = result - result1
 	if (result1 > 0):
 		L[temp][p] = L[temp][p] - res
