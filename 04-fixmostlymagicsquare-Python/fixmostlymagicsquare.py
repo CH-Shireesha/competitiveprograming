@@ -37,10 +37,10 @@ def fixmostlymagicsquare(L):
 		L[temp][p] = L[temp][p] - res
 	else:
 		L[temp][p] = L[temp][p] + res
-	print(L)
+	# print(L)
 	return L
 
 
-fixmostlymagicsquare([[2, 7, 9], [9, 5, 1], [4, 3, 8]])
+# fixmostlymagicsquare([[2, 7, 9], [9, 5, 1], [4, 3, 8]])
 
 	# Your code goes here]
