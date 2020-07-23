@@ -14,7 +14,8 @@ def nthpowerfulnumber(n):
 			if (i%n1 == 0):
 				c += 1
 			n1 += 1
-		if(c <= 2):
-			print(i)
+		if(c == 1 or c == 2):
+			if(n%i == 0 and (n**2)%i == 0):
+				print(i)
 			
-nthpowerfulnumber(36)
+nthpowerfulnumber(2)
