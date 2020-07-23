@@ -26,7 +26,7 @@ def ispowerful(n):
 			n1 += 1
 		if(c == 1 or c == 2):
 			if(n%i == 0 and (n**2)%i == 0):
-				print(n)
+				print(n,i)
 				return True
 			else:
 				return False
