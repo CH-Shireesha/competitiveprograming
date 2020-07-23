@@ -6,4 +6,16 @@
 
 def sumofsquaresofdigit(n):
 	# Your code goes here
-	pass
+	sum = 0
+	if (n <= 9):
+		return n**2
+	else:
+		while(n > 0):
+			temp = n % 10
+			sum += temp**2
+			n //= 10
+		# print(sum)
+		return sum
+
+# sumofsquaresofdigit(234)
+
