@@ -11,8 +11,7 @@ def nthpowerfulnumber(n):
 	for i in range(1000):
 		if(ispowerful(i)):
 			l.append(i)
-	print(l)
-	return (l[n-1])
+	return (l[n])
 
 
 def ispowerful(n):
@@ -21,7 +20,7 @@ def ispowerful(n):
 	count = 0
 	if(n == 1):
 		return n
-	for i in range(n//2):
+	for i in range(n//2 + 1):
 		n1 = 1
 		c = 0
 		while(i >= n1):
