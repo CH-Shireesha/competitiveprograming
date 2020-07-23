@@ -26,8 +26,9 @@ def ispowerful(n):
 			n1 += 1
 		if(c == 1 or c == 2):
 			if(n%i == 0 and (n**2)%i == 0):
+				print(i)
 				return True
 	return False
 			
-print(ispowerful(1))
+print(ispowerful(36))
 print(nthpowerfulnumber(10))
