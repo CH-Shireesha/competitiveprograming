@@ -8,7 +8,7 @@
 def nthpowerfulnumber(n):
 	# Your code goes here
 	l = []
-	for i in range(100):
+	for i in range(1000):
 		if(ispowerful(i)):
 			l.append(i)
 	return (l[n])
@@ -41,4 +41,4 @@ def ispowerful(n):
 	return False
 			
 # print(ispowerful(13))
-print(nthpowerfulnumber(10))
+# print(nthpowerfulnumber(10))
