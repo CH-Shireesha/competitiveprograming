@@ -43,4 +43,4 @@ def ispowerful(n):
 	return False
 			
 # print(ispowerful(13))
-print(nthpowerfulnumber(1))
+print(nthpowerfulnumber(0))
