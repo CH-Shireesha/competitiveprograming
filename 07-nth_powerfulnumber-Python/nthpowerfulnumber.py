@@ -20,7 +20,7 @@ def ispowerful(n):
 	count = 0
 	if(n == 1):
 		return n
-	for i in range(n):
+	for i in range(n//2):
 		n1 = 1
 		c = 0
 		while(i >= n1):
@@ -41,4 +41,4 @@ def ispowerful(n):
 	return False
 			
 # print(ispowerful(13))
-# print(nthpowerfulnumber(10))
+print(nthpowerfulnumber(10))
