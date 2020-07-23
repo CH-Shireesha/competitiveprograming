@@ -9,11 +9,11 @@ def nthpowerfulnumber(n):
 	# Your code goes here
 	count = 0
 	num = 1
-	while (count < n):
+	while (count <= n):
 		if(ispowerful(num)):
 			count += 1
 		num += 1
-	return num
+	return num-1
 
 
 def ispowerful(n):
