@@ -30,11 +30,12 @@ def ispowerful(n):
 			lst.append(i)
 			# print(lst)
 	for i in range(len(lst)):
-		if(n%lst[i] == 0 and (n**2)%lst[i] == 0):
+		if(n%lst[i] == 0 and n%(lst[i]**2) == 0):
 			l.append(lst[i])
+	print(l)
 	if (len(l) > 1):
 		return True
 	return False
 			
-# print(ispowerful(5))
-print(nthpowerfulnumber(10))
+print(ispowerful(9))
+# print(nthpowerfulnumber(10))
