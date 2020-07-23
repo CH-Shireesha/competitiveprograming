@@ -8,10 +8,10 @@
 def nthpowerfulnumber(n):
 	# Your code goes here
 	l = []
-	for i in range(n+1):
+	for i in range(10000):
 		if(ispowerful(i)):
 			l.append(i)
-	print(l)
+	print(l[n])
 
 
 def ispowerful(n):
@@ -26,7 +26,6 @@ def ispowerful(n):
 			n1 += 1
 		if(c == 1 or c == 2):
 			if(n%i == 0 and (n**2)%i == 0):
-				print(i)
 				return True
 	return False
 			
