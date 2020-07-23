@@ -8,26 +8,37 @@
 
 def fixmostlymagicsquare(L):
 	l = []
-	n = []
 	m = []
-	for i in range(len(L)):
-		for j in range(len(L[0])):
-			l.append(L[i][j])
-		row = sum(l)
-		for k in range(len(L)):
-			n.append(L[k][0])
-		col = sum(n)
-		if (row == col):
-			m = L
+	n = 0
+	p = 0
+	temp = 0
+	result = 0
+	for i in L:
+		sum = 0
+		for j in i:
+			sum += j
+		l.append(sum)
+	for i in range(len(l)):
+		if(l.count(l[i]) == 1):
+			temp = i
+			result = l[i]
+		if(l.count(l[i]) > 1):
+			result1 =l[i]
+	for k in range(len(L)):
+		sum = 0
+		for p in range(len(L)):
+			sum = sum + L[p][k]
+		m .append(sum)
+	for x in range(len(m)):
+		if(m.count(m[x]) == 1):
+			n = 0
+		res = result - result1
+		if (result1 > 0):
+			L[p][n] = L[p][n] - res
 		else:
-			num = 1
-			for x in range(len(L)):
-				for y in range(len(L[0])):
-					L[x][y] = L[x][y] + num
-					fixmostlymagicsquare(L)
-			n = n + 1
-	print(m)
-	return m
+			L[p][n] = L[p][n] + res
+	print(L)
+	return L
 
 
 fixmostlymagicsquare([[2, 7, 9], [9, 5, 1], [4, 3, 8]])
