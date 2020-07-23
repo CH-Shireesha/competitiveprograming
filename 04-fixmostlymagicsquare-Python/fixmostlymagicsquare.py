@@ -9,7 +9,6 @@
 def fixmostlymagicsquare(L):
 	l = []
 	m = []
-	n = 0
 	p = 0
 	temp = 0
 	result = 0
@@ -26,17 +25,17 @@ def fixmostlymagicsquare(L):
 			result1 =l[i]
 	for k in range(len(L)):
 		sum = 0
-		for p in range(len(L)):
-			sum = sum + L[p][k]
+		for x in range(len(L)):
+			sum = sum + L[x][k]
 		m .append(sum)
-	for x in range(len(m)):
-		if(m.count(m[x]) == 1):
-			n = 0
+	for y in range(len(m)):
+		if(m.count(m[y]) == 1):
+			p = 1
 		res = result - result1
 		if (result1 > 0):
-			L[p][n] = L[p][n] - res
+			L[temp][p] = L[temp][p] - res
 		else:
-			L[p][n] = L[p][n] + res
+			L[temp][p] = L[temp][p] + res
 	print(L)
 	return L
 
