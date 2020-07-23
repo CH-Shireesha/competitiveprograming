@@ -16,8 +16,8 @@ def fun_nth_happy_number(n):
 	for i in range(50):
 		if(ishappynumber(i)):
 			l.append(i)
-	print(l)
-	# return l[n-1]
+	# print(l)
+	return l[n]
 	
 def ishappynumber(n1):
 	rem = sum = 0
@@ -35,4 +35,4 @@ def ishappynumber(n1):
 	else:
 		return False
 
-print(fun_nth_happy_number(2))
+# print(fun_nth_happy_number(2))
