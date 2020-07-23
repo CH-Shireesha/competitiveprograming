@@ -12,6 +12,7 @@ def fixmostlymagicsquare(L):
 	p = 0
 	temp = 0
 	result = 0
+	result1 = 0
 	for i in L:
 		sum = 0
 		for j in i:
@@ -31,11 +32,11 @@ def fixmostlymagicsquare(L):
 	for y in range(len(m)):
 		if(m.count(m[y]) == 1):
 			p = 1
-		res = result - result1
-		if (result1 > 0):
-			L[temp][p] = L[temp][p] - res
-		else:
-			L[temp][p] = L[temp][p] + res
+	res = result - result1
+	if (result1 > 0):
+		L[temp][p] = L[temp][p] - res
+	else:
+		L[temp][p] = L[temp][p] + res
 	print(L)
 	return L
 
