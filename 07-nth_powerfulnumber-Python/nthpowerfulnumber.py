@@ -37,5 +37,5 @@ def ispowerful(n):
 		return True
 	return False
 			
-print(ispowerful(9))
+print(ispowerful(18))
 # print(nthpowerfulnumber(10))
