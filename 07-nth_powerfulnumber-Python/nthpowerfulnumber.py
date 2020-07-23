@@ -13,7 +13,7 @@ def nthpowerfulnumber(n):
 		if(ispowerful(num)):
 			count += 1
 		num += 1
-	return num-1
+	return (num-1)
 
 
 def ispowerful(n):
@@ -43,4 +43,4 @@ def ispowerful(n):
 	return False
 			
 # print(ispowerful(13))
-print(nthpowerfulnumber(53))
+# print(nthpowerfulnumber(53))
