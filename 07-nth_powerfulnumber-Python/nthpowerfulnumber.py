@@ -15,6 +15,7 @@ def nthpowerfulnumber(n):
 
 
 def ispowerful(n):
+	l = []
 	lst = []
 	if(n == 1):
 		return n
@@ -30,8 +31,8 @@ def ispowerful(n):
 			print(lst)
 	for i in range(len(lst)):
 		if(n%lst[i] == 0 and (n**2)%lst[i] == 0):
-			return True
-	return False
+			l.append(lst[i])
+	return l
 			
-print(ispowerful(5))
+print(ispowerful(9))
 # print(nthpowerfulnumber(2))
