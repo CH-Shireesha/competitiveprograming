@@ -7,11 +7,13 @@
 
 def nthpowerfulnumber(n):
 	# Your code goes here
-	l = []
-	for i in range(1001):
-		if(ispowerful(i)):
-			l.append(i)
-	return (l[n])
+	count = 0
+	num = 1
+	while (count < n):
+		if(ispowerful(num)):
+			count += 1
+		num += 1
+	return num
 
 
 def ispowerful(n):
@@ -41,4 +43,4 @@ def ispowerful(n):
 	return False
 			
 # print(ispowerful(13))
-# print(nthpowerfulnumber(10))
+print(nthpowerfulnumber(1))
