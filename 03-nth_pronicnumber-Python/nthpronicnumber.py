@@ -10,6 +10,7 @@ def nthpronicnumber(n):
 	while (i <= n):
 		x = x*(x+1)
 		i = i + 1
+		x += 1
 		print(x)
 	return x
 
