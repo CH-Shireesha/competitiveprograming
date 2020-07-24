@@ -9,14 +9,11 @@
 def fun_nth_tidynumber(n):
     num = 1
     i = 0
-    l = []
-    while(i < n):
+    while(i <= n):
         if(istidy(num)):
             i += 1
-            l.append(num)
         num += 1
-    print(l)
-    return num
+    return num-1
 
 
 def istidy(num):
@@ -29,5 +26,5 @@ def istidy(num):
         prev = rem
     return True
 
-print(istidy(2800))
-print(fun_nth_tidynumber(499))
+# print(istidy(2800))
+# print(fun_nth_tidynumber(500))
