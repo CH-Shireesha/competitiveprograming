@@ -6,7 +6,7 @@
 def nthautomorphicnumbers(n):
 	# Your code goes here
 	num = 0
-	i = 0
+	i = 1
 	while(i <= n):
 		if(isautomorphic(num)):
 			i += 1
