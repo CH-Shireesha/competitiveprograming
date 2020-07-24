@@ -9,17 +9,22 @@
 def fun_nth_tidynumber(n):
     num = 1
     i = 0
-    l = []
     while(i <= n):
-        prev = 10
-        while(num):
-            rem = num%10
-            num //= 10
-            if(rem > prev): 
-                break
-            prev = rem
-        l.append(num)
-        num += num
-    return l
+        if(istidy(num)):
+            i += 1
+        num += 1
+    return num
 
-    return 0
+
+def istidy(num):
+    prev = 10
+    while(num):
+        rem = num%10
+        num //= 10
+        if(rem > prev): 
+            return False
+        prev = rem
+    return True
+
+
+print(fun_nth_tidynumber(15))
