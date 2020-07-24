@@ -16,11 +16,13 @@ def nthautomorphicnumbers(n):
 
 
 def isautomorphic(num):
-	 n = num**2
-	 num = str(num)
-	 s = str(n)
-	 print(s[len(s)-len(num):])
-
+	n = num**2
+	num = str(num)
+	s = str(n)
+	if(s[len(s)-len(num):] == num):
+		return True
+	else:
+		return False
 
 
 
