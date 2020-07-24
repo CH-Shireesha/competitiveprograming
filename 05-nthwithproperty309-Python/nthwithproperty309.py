@@ -6,4 +6,20 @@
 
 def nthwithproperty309(n):
 	# Your code goes here
-	pass
+	d = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+	m = 0
+	s = 1
+	while(m < n):
+		res = str(s**5)
+		flag = False
+		for i in d:
+			if i not in res:
+				flag = True
+				break
+		if(not flag):
+			m += 1
+		s += 1
+	print(s)
+
+
+nthwithproperty309(0)
