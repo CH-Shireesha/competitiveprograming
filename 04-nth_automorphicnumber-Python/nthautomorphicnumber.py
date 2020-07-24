@@ -18,7 +18,7 @@ def nthautomorphicnumbers(n):
 def isautomorphic(num):
 	 n = num**2
 	 s = str(n)
-	 print(s[::-2])
+	 print(s[-1:-2])
 
 
 
