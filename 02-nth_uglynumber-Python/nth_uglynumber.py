@@ -6,7 +6,7 @@
 def fun_nth_uglynumber(n):
     num = 1
     i = 1
-    while(i < n):
+    while(i <= n):
         if(isUgly(num)):
             i += 1
         num += 1
