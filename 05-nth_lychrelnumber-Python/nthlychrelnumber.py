@@ -13,6 +13,7 @@ def nthlychrelnumbers(n):
 		if(islychrel(i)):
 			i += 1
 		num += 1
+	print(num)
 	return num
 
 
