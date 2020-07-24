@@ -5,14 +5,10 @@
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
-	num = 0
-	i = 1
-	while(i <= n):
-		if(isautomorphic(num)):
-			i += 1
-		num += 1
-	# print(num)
-	return (num-1)
+	for i in range(0,n+1):
+		if(isautomorphic(i)):
+			print(i)
+	return (i)
 
 
 def isautomorphic(num):
@@ -24,4 +20,4 @@ def isautomorphic(num):
 	else:
 		return False
 
-# print(nthautomorphicnumbers(1))
+print(nthautomorphicnumbers(1))
