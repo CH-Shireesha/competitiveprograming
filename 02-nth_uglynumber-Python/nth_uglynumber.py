@@ -11,7 +11,7 @@ def fun_nth_uglynumber(n):
             i += 1
         num += 1
     # print(l)
-    return num+1
+    return num-1
 
 def isUgly(num):
     while(num % 2 == 0):
@@ -29,4 +29,4 @@ def isUgly(num):
         return False
 
 # print(isUgly(6))
-# print(fun_nth_uglynumber(5))
+# print(fun_nth_uglynumber(10))
