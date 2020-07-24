@@ -7,4 +7,27 @@
 
 def nthlychrelnumbers(n):
 	# your code goes here
-	pass
+	num = 1
+	i = 1
+	while(i <= n):
+		if(islychrel(i)):
+			i += 1
+		num += 1
+	return num
+
+
+def islychrel(num):
+	max_iteration = 20
+	for i in range(max_iteration):
+		num = num + reverse(num)
+		if(num == reverse(num)):
+			return False
+	return True
+
+def reverse(num):
+	rev = 0
+	while(num > 0):
+		rem = num % 10
+		rev = (rev*10) + rem
+		num //= 10
+	return rev
