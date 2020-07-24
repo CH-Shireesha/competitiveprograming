@@ -12,7 +12,7 @@ def nthautomorphicnumbers(n):
 			i += 1
 		num += 1
 	# print(num)
-	return (num)
+	return (num-1)
 
 
 def isautomorphic(num):
