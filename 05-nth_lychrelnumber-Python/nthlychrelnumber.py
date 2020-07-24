@@ -13,8 +13,8 @@ def nthlychrelnumbers(n):
 		if(islychrel(i)):
 			i += 1
 		num += 1
-	print(num)
-	return num
+	print(num-1)
+	return num-1
 
 
 def islychrel(num):
@@ -32,3 +32,5 @@ def reverse(num):
 		rev = (rev*10) + rem
 		num //= 10
 	return rev
+
+print(nthlychrelnumbers(1))
