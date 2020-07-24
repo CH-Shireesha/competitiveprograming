@@ -24,4 +24,4 @@ def isautomorphic(num):
 	else:
 		return False
 
-# print(nthautomorphicnumbers(1))
+print(nthautomorphicnumbers(1))
