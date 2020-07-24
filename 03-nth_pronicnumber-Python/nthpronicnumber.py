@@ -6,11 +6,13 @@
 def nthpronicnumber(n):
 	# Your code goes here
 	num = 0
-	for i in range(0,n+1):
-		if(ispronic(i)):
-			num = i
-			print(i)
-	return num
+	i = 0
+	while(i <= n):
+		if(ispronic(num)):
+			i += 1
+		num += 1
+	print(num-1)
+	return num-1
 
 
 def ispronic(num):
