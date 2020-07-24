@@ -9,7 +9,7 @@ def fun_nth_uglynumber(n):
     while(i < n):
         if(isUgly(num)):
             i += 1
-        num += num
+        num += 1
     # print(l)
     return num
 
@@ -29,4 +29,4 @@ def isUgly(num):
         return False
 
 print(isUgly(6))
-print(fun_nth_uglynumber(150))
+print(fun_nth_uglynumber(5))
