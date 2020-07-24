@@ -11,7 +11,6 @@ def nthpronicnumber(n):
 		if(ispronic(num)):
 			i += 1
 		num += 1
-	print(num-1)
 	return num-1
 
 
@@ -21,5 +20,5 @@ def ispronic(num):
 			return True
 	return False
 
-print(ispronic(3))
-print(nthpronicnumber(2))
+# print(ispronic(6))
+# print(nthpronicnumber(2))
