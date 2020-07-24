@@ -6,12 +6,12 @@
 def nthautomorphicnumbers(n):
 	# Your code goes here
 	num = 0
-	i = 1
+	i = 0
 	while(i <= n):
 		if(isautomorphic(num)):
 			i += 1
 		num += 1
-	print(num)
+	# print(num)
 	return (num)
 
 
@@ -25,5 +25,3 @@ def isautomorphic(num):
 		return False
 
 
-
-print(isautomorphic(65))
