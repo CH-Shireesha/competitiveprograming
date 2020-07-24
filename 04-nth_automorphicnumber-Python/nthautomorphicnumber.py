@@ -17,11 +17,11 @@ def nthautomorphicnumbers(n):
 
 def isautomorphic(num):
 	n = num**2
-	n1 = len(str(num))
-	last = n%pow(10,n)
-	if(last == num):
+	num = str(num)
+	s = str(n)
+	if(s[len(s)-len(num):] == num):
 		return True
 	else:
 		return False
 
-print(nthautomorphicnumbers(1))
+# print(nthautomorphicnumbers(1))
