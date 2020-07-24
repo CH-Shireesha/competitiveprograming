@@ -19,5 +19,5 @@ def ispronic(num):
 			return True
 	return False
 
-print(ispronic(6))
+print(ispronic(3))
 print(nthpronicnumber(2))
