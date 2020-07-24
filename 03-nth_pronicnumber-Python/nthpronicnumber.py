@@ -14,10 +14,10 @@ def nthpronicnumber(n):
 
 
 def ispronic(num):
-	for x in range(1,num+1):
+	for x in range(0,num+1):
 		if(x*(x+1) == num):
 			return True
 	return False
 
-
+print(ispronic(6))
 print(nthpronicnumber(2))
