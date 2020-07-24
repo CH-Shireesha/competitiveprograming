@@ -4,4 +4,16 @@
 
 
 def fun_nth_uglynumber(n):
-    return 0
+    num = 1
+    i = 0
+    while(i <= n):
+        if(isUgly(num)):
+            i += 1
+        num += num
+    return num
+
+def isUgly(num):
+    if (num % 2== 0 or num % 3 == 0 or num % 5 == 0):
+        return True
+    else:
+        return False
