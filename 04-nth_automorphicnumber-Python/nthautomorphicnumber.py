@@ -25,4 +25,4 @@ def isautomorphic(num):
 
 
 
-isautomorphic(76)
+isautomorphic(25)
