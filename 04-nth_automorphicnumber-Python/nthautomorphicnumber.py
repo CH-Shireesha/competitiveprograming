@@ -5,4 +5,22 @@
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
-	pass
+	num = 0
+	i = 1
+	while(i <= n):
+		if(isautomorphic(num)):
+			i += 1
+		num += 1
+	print(num)
+	return (num)
+
+
+def isautomorphic(num):
+	 n = num**2
+	 s = str(n)
+	 print(s[::-2])
+
+
+
+
+isautomorphic(5)
