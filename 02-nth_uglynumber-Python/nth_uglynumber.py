@@ -12,7 +12,7 @@ def fun_nth_uglynumber(n):
             i += 1
             l.append(num)
         num += num
-    print(l)
+    # print(l)
     return num-1
 
 def isUgly(num):
