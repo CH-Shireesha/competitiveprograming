@@ -17,9 +17,9 @@ def nthautomorphicnumbers(n):
 
 def isautomorphic(num):
 	n = num**2
-	num = str(num)
-	s = str(n)
-	if(s[len(s)-len(num):] == num):
+	n1 = len(str(num))
+	last = n%pow(10,n)
+	if(last == num):
 		return True
 	else:
 		return False
