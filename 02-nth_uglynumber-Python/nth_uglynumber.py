@@ -5,13 +5,13 @@
 
 def fun_nth_uglynumber(n):
     num = 1
-    i = 1
+    i = 0
     while(i <= n):
         if(isUgly(num)):
             i += 1
         num += 1
     # print(l)
-    return num
+    return num+1
 
 def isUgly(num):
     while(num % 2 == 0):
