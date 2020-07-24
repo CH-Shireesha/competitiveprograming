@@ -8,7 +8,7 @@ def nthautomorphicnumbers(n):
 	for i in range(0,n+1):
 		if(isautomorphic(i)):
 			num = i
-	return (num-1)
+	return (num)
 
 
 def isautomorphic(num):
