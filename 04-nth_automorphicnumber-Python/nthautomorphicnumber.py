@@ -26,4 +26,4 @@ def isautomorphic(num):
 
 
 
-print(isautomorphic(5))
+print(isautomorphic(65))
