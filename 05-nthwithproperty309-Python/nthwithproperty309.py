@@ -4,12 +4,14 @@
 # Write the function nthWithProperty309 that takes a non-negative int n and returns 
 # the nth number with Property309.
 
+
+
 def nthwithproperty309(n):
 	# Your code goes here
 	d = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 	m = 0
 	s = 1
-	while(m < n):
+	while(m <= n):
 		res = str(s**5)
 		flag = False
 		for i in d:
@@ -19,8 +21,8 @@ def nthwithproperty309(n):
 		if(not flag):
 			m += 1
 		s += 1
-	print(s)
+	print(s-1)
 	return (s-1)
 
 
-nthwithproperty309(418)
+nthwithproperty309(0)
