@@ -5,14 +5,17 @@
 
 def nthpronicnumber(n):
 	# Your code goes here
-	i = 0
-	x = 0
-	while (i <= n):
-		x = x*(x+1)
-		i = i + 1
-		x += 1
-		print(x)
-	return x-1
+	for i in range(1,n+1):
+		if(ispronic(i)):
+			print(i)
+	return i
+
+
+def ispronic(num):
+	for x in range(1,num+1):
+		if(x*(x+1) == num):
+			return True
+	return False
 
 
 print(nthpronicnumber(2))
