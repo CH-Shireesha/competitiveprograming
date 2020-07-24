@@ -15,4 +15,4 @@ def nthpronicnumber(n):
 	return x-1
 
 
-print(nthpronicnumber(1))
+print(nthpronicnumber(2))
