@@ -26,5 +26,5 @@ def istidy(num):
         prev = rem
     return True
 
-
+print(istidy(2888))
 # print(fun_nth_tidynumber(15))
