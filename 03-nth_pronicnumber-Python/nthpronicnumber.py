@@ -12,7 +12,7 @@ def nthpronicnumber(n):
 		i = i + 1
 		x += 1
 		print(x)
-	return x
+	return x-1
 
 
 print(nthpronicnumber(1))
