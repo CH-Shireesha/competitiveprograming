@@ -28,5 +28,5 @@ def isUgly(num):
     else:
         return False
 
-print(isUgly(6))
-print(fun_nth_uglynumber(5))
+# print(isUgly(6))
+# print(fun_nth_uglynumber(5))
