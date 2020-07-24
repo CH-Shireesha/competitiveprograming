@@ -20,6 +20,7 @@ def nthwithproperty309(n):
 			m += 1
 		s += 1
 	print(s)
+	return (s-1)
 
 
-nthwithproperty309(0)
+nthwithproperty309(418)
