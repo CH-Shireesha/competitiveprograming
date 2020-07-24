@@ -5,7 +5,7 @@
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
-	for i in range(0,n+1):
+	for i in range(0,n):
 		if(isautomorphic(i)):
 			num = i
 	return (num)
