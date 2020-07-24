@@ -20,7 +20,7 @@ def isautomorphic(num):
 	 num = str(num)
 	 n1 = len(num)
 	 s = str(n)
-	 print(s[n1-1])
+	 print(s[n1-1:])
 
 
 
