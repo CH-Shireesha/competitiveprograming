@@ -31,14 +31,6 @@ def isPrime(n):
         return True
     return False
 
-def digitsum(n):
-    sum = 0
-    while(n > 0):
-        rem = n%10
-        sum += rem
-        n //= 10
-    return sum
-
 def isSmith(j):
     if(digitsum(j) == sumoffactors(j)):
         return True
@@ -60,12 +52,20 @@ def sumoffactors(n):
     for j in l:
         if(len(str(j)) == 1):
             num += j
-            print(num)
+            # print(num)
         elif(len(str(j)) > 1 and j is not n):
             # print(j, num)
             num += digitsum(j)
     # print(num)
     return num
+
+def digitsum(n):
+    sum = 0
+    while(n > 0):
+        rem = n%10
+        sum += rem
+        n //= 10
+    return sum
 
 # print(isSmith(4))
 # print(fun_nth_smithnumber(1))
