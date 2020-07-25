@@ -12,7 +12,7 @@ import math
 def fun_nth_smithnumber(n):
     j = 1
     c = 0
-    while(j <= n):
+    while(c <= n):
         if (isSmith(j) and not isPrime(j)):
             c += 1
         j += 1
