@@ -8,20 +8,20 @@
 
 def fun_nth_palindromic_prime(n):
 	num = 1
-	c = -1
-	while(c < n):
+	c = 0
+	while(c <= n):
 		print(c,num)
-		num += 1
 		if(isprime(num)):
 			if(ispalindrome(num)):
 				c += 1
-	return num
+		num += 1
+	return num-1
 
 def isprime(num):
 	i = 1
 	c = 0
 	while(i <= num):
-		print(i,num)
+		# print(i,num)
 		if(num%i == 0):
 			c += 1
 			if(c > 2):
@@ -38,4 +38,4 @@ def ispalindrome(num):
 		return True
 	return False
 		
-print(fun_nth_palindromic_prime(0))
+# print(fun_nth_palindromic_prime(0))
