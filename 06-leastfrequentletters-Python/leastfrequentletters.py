@@ -15,5 +15,8 @@ def leastfrequentletters(s):
 			d[ch] = 1
 		else:
 			d[ch] += 1
-	print(d)
+	Lfl = min(d.values())
+	print(Lfl)
 	pass
+
+leastfrequentletters("frequent")
