@@ -25,7 +25,8 @@ def leastfrequentletters(s):
 		if(d[key] == v):
 			Lfl += key
 	# print(Lfl)
-	return Lfl.sorted()
+	Lfl = sorted(Lfl)
+	return "".join(Lfl)
 	pass
 
 # leastfrequentletters("frequent")
