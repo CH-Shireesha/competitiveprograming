@@ -9,8 +9,9 @@ def isrotation(x, y):
 	# Your code goes here
 	x = str(x)
 	y = str(y)
+	z = x.reverse()
 	if(len(x) == len(y)):
-		if(x[::-1] == y):
+		if(z == y):
 			return True
 	s = x + y
 	if(s.count(y) > 0):
