@@ -13,6 +13,7 @@ def leastfrequentletters(s):
 	Lfl = ""
 	for ch in s:
 		if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')):
+			ch = ch.lower()
 			if ch not in d:
 				d[ch] = 1
 			else:
