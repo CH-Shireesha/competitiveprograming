@@ -24,3 +24,4 @@ def dicetoorderedhand(a, b, c):
 	return int("".join(map(str,d)))
 
 
+
