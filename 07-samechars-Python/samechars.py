@@ -8,12 +8,18 @@
 def samechars(s1, s2):
 	# Your code goes here
 	s = []
+	flag = True
+	if(type(s1)!=str and type(s2)!=str):
+		return False
 	for i in s2:
 		s.append(i)
-	print(s)
+	# print(s)
 	for ch in s1:
-		if ch not in s:
-			return False
-	return True
+		if ch in s:
+			flag = True
+	if(flag == True):
+		return True
+	else:
+		return False
 				
-print(samechars("abcdefg", "higabc"))
+# print(samechars("abcdefg", "higabc"))
