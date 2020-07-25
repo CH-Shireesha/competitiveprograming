@@ -12,10 +12,11 @@ def leastfrequentletters(s):
 	d = {}
 	Lfl = ""
 	for ch in s:
-		if ch not in d:
-			d[ch] = 1
-		else:
-			d[ch] += 1
+		if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')):
+			if ch not in d:
+				d[ch] = 1
+			else:
+				d[ch] += 1
 	v = min(d.values())
 	for key in d:
 		if(d[key] == v):
