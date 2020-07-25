@@ -24,4 +24,4 @@ def distance(x1,y1,x2,y2):
 	dist = (math.pow(x1 - x2,2) + math.pow(y1 - y2,2))
 	return dist
 
-isrighttriangle(-1, 7, 10, -4, 12, -2)
+# isrighttriangle(-1, 7, 10, -4, 12, -2)
