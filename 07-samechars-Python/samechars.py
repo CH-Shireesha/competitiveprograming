@@ -7,9 +7,10 @@
 
 def samechars(s1, s2):
 	# Your code goes here
+	s = s2.split()
 	for ch in s1:
-		for c in s2:
-			if ch not in s2:
-				return False
-			return True
+		if ch not in s:
+			return False
+		return True
+				
 	pass
