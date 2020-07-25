@@ -8,7 +8,8 @@
 def samechars(s1, s2):
 	# Your code goes here
 	for ch in s1:
-		if ch not in s2:
-			return False
-		return True
+		for c in s2:
+			if ch not in s2:
+				return False
+			return True
 	pass
