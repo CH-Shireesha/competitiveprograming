@@ -12,7 +12,7 @@ def findzerowithbisection(x, epsilon):
 	res = 0
 	y = 0
 	z = x
-	while(abs(res**2)-x > epsilon and res <= x):
+	while(abs(res**2-x) > epsilon and res <= x):
 		res = (y + z)/2
 		if(res**2 > x):
 			z = res
