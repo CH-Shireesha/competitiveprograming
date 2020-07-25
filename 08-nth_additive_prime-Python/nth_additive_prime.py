@@ -6,14 +6,14 @@
 
 def fun_nth_additive_prime(n):
 	num = 0
-	i = 1
+	i = -1
 	while(i <= n):
 		if(isprime(num)):
 			c = add(num)
 			if(isprime(c)):
 				i += 1
 		num += 1
-	return 1
+	return (num-1)
 
 
 def isprime(n):
