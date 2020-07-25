@@ -20,7 +20,7 @@ def isprime(num):
 	i = 1
 	c = 0
 	while(i <= num):
-		if(n%i == 0):
+		if(num%i == 0):
 			c += 1
 			if(c > 2):
 				break
