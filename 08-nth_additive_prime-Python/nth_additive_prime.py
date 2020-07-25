@@ -7,10 +7,11 @@
 def fun_nth_additive_prime(n):
 	num = 0
 	i = -1
-	while(i <= n):
-		if(isprime(num)):
+	while(i < n):
+		# print(i)
+		if(isprime(num)==True):
 			c = add(num)
-			if(isprime(c)):
+			if(isprime(c)==True):
 				i += 1
 		num += 1
 	return (num-1)
@@ -23,10 +24,9 @@ def isprime(n):
 		if(n%i == 0):
 			count += 1
 		i += 1
-		if(count == 2):
-			return True
-		else:
-			return False
+	if(count == 2):
+		return True
+	return False
 
 def add(n):
 	num = 0
@@ -34,3 +34,5 @@ def add(n):
 		num += n%10
 		n //= 10
 	return num
+
+print(fun_nth_additive_prime(0))
