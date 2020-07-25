@@ -7,4 +7,11 @@
 
 
 def fun_nth_palindromic_prime(n):
-	return 0
+	num = 0
+	c = 1
+	while(i <= n):
+		if(isprime(num)):
+			if(ispalindrome(num)):
+				c += 1
+		num += 1
+	return num
