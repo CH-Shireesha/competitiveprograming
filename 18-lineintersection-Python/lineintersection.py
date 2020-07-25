@@ -12,5 +12,4 @@ def lineintersection(m1, b1, m2, b2):
 		return None
 	else:
 		return abs((b1-b2)/(m1-m2))
-	pass
 
