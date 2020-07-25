@@ -22,8 +22,6 @@ def isprime(num):
 	while(i <= num):
 		if(num%i == 0):
 			c += 1
-			if(c > 2):
-				break
 		i += 1
 	if(c == 2):
 		return True
