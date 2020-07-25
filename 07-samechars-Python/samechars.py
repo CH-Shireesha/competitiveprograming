@@ -9,17 +9,17 @@ def samechars(s1, s2):
 	# Your code goes here
 	s = []
 	flag = True
-	if(type(s1)!=str and type(s2)!=str):
+	if(type(s1)!=str or type(s2)!=str):
 		return False
-	for i in s2:
+	for i in s1:
 		s.append(i)
 	# print(s)
-	for ch in s1:
-		if ch in s:
-			flag = True
+	for ch in s2:
+		if ch not in s:
+			flag = False
 	if(flag == True):
 		return True
 	else:
 		return False
-				
+				 
 # print(samechars("abcdefg", "higabc"))
