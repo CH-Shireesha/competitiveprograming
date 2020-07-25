@@ -10,4 +10,25 @@
 import math
 
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    if(n == 0):
+        return 1
+    count = 0
+    i = 1
+    while(count < n):
+        i += 1
+        num = int(i**2)
+        x = 0
+        y = num 
+        while(y > 0):
+            x += 1
+            y //= 10
+        for j in range(x):
+            temp = num//(10**j)
+            r = num%(10**j)
+            if(r != 0):
+                if(i == temp+r):
+                    count += 1
+                    break
+    return i
+
+# print(fun_nth_kaprekarnumber(1))
