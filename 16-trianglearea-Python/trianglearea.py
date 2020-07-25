@@ -12,3 +12,5 @@ def trianglearea(s1, s2, s3):
 	area = math.sqrt((side*(side-s1)*(side-s2)*(side-s3)))
 	return area
 	pass
+
+
