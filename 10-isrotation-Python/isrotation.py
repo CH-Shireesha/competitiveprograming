@@ -11,10 +11,10 @@ def isrotation(x, y):
 	y = str(y)
 	z = x[::-1]
 	if(len(x) == len(y)):
-		if(z == y):
+		if(y == z):
 			return True
 		s = x + y
-		if(s.count(y) > 0):
+		if(s.count(str(y)) > 0):
 			return True
 		return False
 	else:
