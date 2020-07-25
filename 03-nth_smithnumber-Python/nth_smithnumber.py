@@ -12,11 +12,11 @@ import math
 def fun_nth_smithnumber(n):
     j = 1
     c = 0
-    while(j < n):
+    while(j <= n):
         if (isSmith(j) and not isPrime(j)):
             c += 1
-        i = i+1
-    return j
+        j += 1
+    return (j-1)
 
 def isPrime(n):
     i = 1
@@ -55,9 +55,11 @@ def sumoffactors(n):
         l.append(int(n))
     num = 0
     sum = 0
+    print(l)
     for j in l:
         if(len(str(j)) == 1):
             num += j
+            print(num)
         elif(len(str(j)) > 1 and j is not n):
             print(j, num, sum)
             while(j > 0):
