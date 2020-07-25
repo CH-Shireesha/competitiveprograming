@@ -31,6 +31,13 @@ def isPrime(n):
         return True
     return False
 
+def digitsum(n):
+    sum = 0
+    while(n > 0):
+        rem = n%10
+        sum += rem
+        j //= 10
+    return sum
 
 def isSmith(j):
     sum = 0
