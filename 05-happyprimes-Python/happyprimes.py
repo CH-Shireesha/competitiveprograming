@@ -23,8 +23,10 @@ def isprime(n):
     while(i <= n):
         if(n%i == 0):
             count += 1
+            if (count > 2):
+                break
         i += 1
-    if(count <= 2):
+    if(count == 2):
         return True
     return False
 
