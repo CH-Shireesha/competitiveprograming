@@ -36,16 +36,11 @@ def digitsum(n):
     while(n > 0):
         rem = n%10
         sum += rem
-        j //= 10
+        n //= 10
     return sum
 
 def isSmith(j):
-    sum = 0
-    while(j > 0):
-        rem = j%10
-        sum += rem
-        j //= 10
-    if(sum == sumoffactors(j)):
+    if(digitsum(j) == sumoffactors(j)):
         return True
     return False
 
@@ -61,23 +56,16 @@ def sumoffactors(n):
     if n > 2:
         l.append(int(n))
     num = 0
-    sum = 0
-    print(l)
+    # print(l)
     for j in l:
         if(len(str(j)) == 1):
             num += j
             print(num)
         elif(len(str(j)) > 1 and j is not n):
-            print(j, num, sum)
-            while(j > 0):
-                rem = j%10
-                sum += rem
-                j //= 10
-                print(sum)
-            num += sum
-            print(num,sum)
-    print(num)
+            # print(j, num)
+            num += digitsum(j)
+    # print(num)
     return num
 
-print(isSmith(4))
-print(fun_nth_smithnumber(1))
+# print(isSmith(4))
+# print(fun_nth_smithnumber(1))
