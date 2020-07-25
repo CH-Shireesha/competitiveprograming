@@ -18,12 +18,14 @@ def leastfrequentletters(s):
 				d[ch] = 1
 			else:
 				d[ch] += 1
+	if(len(d) == 0):
+		return ""
 	v = min(d.values())
 	for key in d:
 		if(d[key] == v):
 			Lfl += key
 	# print(Lfl)
-	return Lfl
+	return Lfl.sorted()
 	pass
 
 # leastfrequentletters("frequent")
