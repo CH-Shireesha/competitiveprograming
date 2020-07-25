@@ -9,9 +9,9 @@ def fun_nth_additive_prime(n):
 	i = -1
 	while(i < n):
 		# print(i)
-		if(isprime(num)==True):
+		if(isprime(num)):
 			c = add(num)
-			if(isprime(c)==True):
+			if(isprime(c)):
 				i += 1
 		num += 1
 	return (num-1)
