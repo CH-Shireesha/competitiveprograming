@@ -8,6 +8,7 @@
 def samechars(s1, s2):
 	# Your code goes here
 	s = s2.split()
+	print(s)
 	for ch in s1:
 		if ch not in s:
 			return False
