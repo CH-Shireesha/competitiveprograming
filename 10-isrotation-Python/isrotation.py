@@ -9,13 +9,15 @@ def isrotation(x, y):
 	# Your code goes here
 	x = str(x)
 	y = str(y)
-	z = reverse(x)
+	z = x[::-1]
 	if(len(x) == len(y)):
 		if(z == y):
 			return True
-	s = x + y
-	if(s.count(y) > 0):
-		return True
-	return False
+		s = x + y
+		if(s.count(y) > 0):
+			return True
+		return False
+	else:
+		return False
 
 	pass
