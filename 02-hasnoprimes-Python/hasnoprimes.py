@@ -22,4 +22,5 @@ def fun_hasnoprimes(l):
 				return False
 	return True
 
+
 # print(fun_hasnoprimes([[9, 12], [8], [16, 8]]))
