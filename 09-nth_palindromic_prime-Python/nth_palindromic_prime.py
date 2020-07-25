@@ -30,5 +30,9 @@ def isprime(num):
 	else:
 		return False
 
-
+def ispalindrome(num):
+	s = str(num)
+	if(num == s[::-1]):
+		return True
+	return False
 		
