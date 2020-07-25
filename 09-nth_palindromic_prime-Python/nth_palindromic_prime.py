@@ -15,3 +15,20 @@ def fun_nth_palindromic_prime(n):
 				c += 1
 		num += 1
 	return num
+
+def isprime(num):
+	i = 1
+	c = 0
+	while(i <= num):
+		if(n%i == 0):
+			c += 1
+			if(c > 2):
+				break
+		i += 1
+	if(c == 2):
+		return True
+	else:
+		return False
+
+
+		
