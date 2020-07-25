@@ -14,7 +14,7 @@ def ishappyprimenumber(n):
     if(isprime(n)):
         if(ishappynumber(n)):
             return True
-        return False
+    return False
 
 
 def isprime(n):
