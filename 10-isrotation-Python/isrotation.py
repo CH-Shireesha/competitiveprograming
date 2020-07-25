@@ -13,7 +13,7 @@ def isrotation(x, y):
 	if(len(x) == len(y)):
 		if(z == y):
 			return True
-		s = x + y
+		s = x + x
 		if(s.count(y) > 0):
 			return True
 		return False
