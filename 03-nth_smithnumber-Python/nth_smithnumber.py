@@ -11,52 +11,64 @@ import math
 
 def fun_nth_smithnumber(n):
     j = 1
+    c = 0
     while(j < n):
-        if (isSmith(j)):
-            print(j)
+        if (isSmith(j) and not isPrime(j)):
+            c += 1
         i = i+1
     return j
 
+def isPrime(n):
+    i = 1
+    c = 0
+    while(i <= n):
+        if(n%i == 0):
+            c += 1
+            if(c > 2):
+                break
+        i += 1
+    if(c == 2):
+        return True
+    return False
+
+
 def isSmith(j):
-    num = j
     sum = 0
-    i = 0
-    while(primes[i] <= j/2):
-        while(j%primes[i] == 0):
-            p = primes[i]
-            j = j/p
-            while(p > 0):
-                sum += (p%10)
-                p //= 10
-        i = i+1
-    if(not j == 1 and not j == num):
-        while(j > 0):
-            sum += num%10
-            num //= 10
-    sumd = 0
     while(j > 0):
-        sumd += num%10
-        num //= 10
-    return (sum == sumd)
+        rem = j%10
+        sum += rem
+        j //= 10
+    if(sum == sumoffactors(j)):
+        return True
+    return False
 
-primes = []
-max = 1000
-def smallprime():
-    m = [0] * ((max//2)+100)
-    i = 1
-    while(i <= ((math.sqrt(max)-1)/2)):
-        j = (i* (i+1)) << 1
-        while(j <= max//2):
-            m[j] = 1
-            j += 2*i+1
-        i += 1
-    primes.append(2)
-    i = 1
-    while(i <= max/2):
-        if(m[i] == 0):
-            primes.append(2*i+1)
-        i += 1
+def sumoffactors(n):
+    l = []
+    while(n%2 == 0 and n > 0):
+        l.append(int(2))
+        n = n/2
+    for i in range(3,int(math.sqrt(n))+1,2):
+        while(n%i == 0):
+            l.append(int(i))
+            n = n/i
+    if n > 2:
+        l.append(int(n))
+    num = 0
+    sum = 0
+    for j in l:
+        if(len(str(j)) == 1):
+            num += j
+        elif(len(str(j)) > 1 and j is not n):
+            print(j, num, sum)
+            while(j > 0):
+                rem = j%10
+                sum += rem
+                j //= 10
+                print(sum)
+            num += sum
+            print(num,sum)
+    print(num)
+    return num
 
-smallprime()
 print(isSmith(4))
 print(fun_nth_smithnumber(1))
