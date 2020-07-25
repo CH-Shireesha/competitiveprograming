@@ -10,13 +10,18 @@
 def leastfrequentletters(s):
 	# Your code goes here
 	d = {}
+	Lfl = ""
 	for ch in s:
 		if ch not in d:
 			d[ch] = 1
 		else:
 			d[ch] += 1
-	Lfl = min(d.values())
-	print(Lfl)
+	v = min(d.values())
+	for key in d:
+		if(d[key] == v):
+			Lfl += key
+	# print(Lfl)
+	return Lfl
 	pass
 
-leastfrequentletters("frequent")
+# leastfrequentletters("frequent")
