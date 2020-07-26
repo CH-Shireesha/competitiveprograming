@@ -16,7 +16,7 @@ def nthcircularprime(n):
 	return num-1
 
 def isprime(n):
-	i = 0
+	i = 1
 	c = 0
 	while(i <= n):
 		if(n%i == 0):
