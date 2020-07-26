@@ -68,13 +68,13 @@ class Graph(object):
             for edge in node.edges:
                 # print(edge.value, edge.node_from.value, edge.node_to.value)
                 if(node.value != edge.node_to.value):
-                    adjacency_matrix[node.value][edge.node_to.value] = edge.value
+                    adjacency_matrix[edge.node_from.value][edge.node_to.value] = edge.value
         return adjacency_matrix
 
-g = Graph()
-g.insert_edge(100, 1,2)
-g.insert_edge(101,1,3)
-g.insert_edge(102,1,4)
-g.insert_edge(103,3,4)
+# g = Graph()
+# g.insert_edge(100, 1,2)
+# g.insert_edge(101,1,3)
+# g.insert_edge(102,1,4)
+# g.insert_edge(103,3,4)
 
-print(g.get_adjacency_matrix())
+# print(g.get_adjacency_matrix())
