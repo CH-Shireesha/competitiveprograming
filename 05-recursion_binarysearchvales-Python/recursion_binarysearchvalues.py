@@ -24,11 +24,11 @@ def recursion_binarysearchvalues(L, v):
 
 def binary(l,h,L,v):
 	if(l <= h):
-		m = (l+h)/2
+		m = (l+h)//2
 		if(L[m] < v):
-			return[(m,L(m))]+binary(m+1,h,L,v)
+			return[(m,L[m])]+binary(m+1,h,L,v)
 		if(L[m] > v):
-			return[(m,L(m))]+binary(l,m-1,L,v)
+			return[(m,L[m])]+binary(l,m-1,L,v)
 		if(L[m] == v):
 			return[(m,L[m])]
 	else:
