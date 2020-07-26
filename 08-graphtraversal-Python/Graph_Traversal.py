@@ -171,12 +171,14 @@ class Graph(object):
             s = trans_lst.pop()
             result_lst.append(s)
             get_node = self.find_node(s)
-            print(get_node.value, get_node.visited)
+            print(get_node.value, get_node.visited, len(get_node.edges))
             get_node.visited = True
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
-                if(not edge.node_to.visited):
-                    trans_lst.append(edge.value)
+                # print(edge.node_from.value, edge.node_to.value)
+                if(edge.node_from.value == get_node.value and not edge.node_to.visited):
+                    # print(edge.node_from.value, edge.node_to.value)
+                    trans_lst.append(edge.node_to.value)
         return result_lst
             
 
@@ -205,3 +207,5 @@ graph.insert_edge(932, 2, 4)    # London <-> Berlin
 graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
+
+print(graph.bfs(5))
