@@ -18,3 +18,38 @@ def fun_nearestkaprekarnumber(n):
     if(iskaprekar(n)):
         return n
     m = n-low
+    s = n+high
+    while True:
+        if(iskaprekarnumber(m)):
+            if(iskaprekarnumber(s)):
+                if(abs(s-n) > abs(m -n)):
+                    return m
+                    break
+                else:
+                    return s
+                    break
+            else:
+                return m
+                break
+        if(iskarprekarnumber(s)):
+            return s
+            break
+        m -= 1
+        s += 1
+
+def iskaprekarnumber(n):
+    if(n == 0):
+        return 1
+    num = int(n**2)
+    x = 0
+    y = num
+    while(y > 0):
+        x += 1
+        y //= 10
+    for j in range(x):
+        temp = num//(10**j)
+        r = num%(10**j)
+        if(r != 0):
+            if(n == temp+r):
+                return True
+    return False
