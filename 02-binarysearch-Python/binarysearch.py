@@ -16,11 +16,11 @@ def binary_search(input_array, value):
     high = len(input_array)-1
     while(low <= high):
         mid = (low+high)//2
-        print(low,high,mid)
+        # print(low,high,mid)
         if(input_array[mid] == value):
             return mid
         elif(input_array[mid] > value):
-            print(high)
+            # print(high)
             high = mid-1
         elif(input_array[mid] < value):
             low = mid+1
