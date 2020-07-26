@@ -11,7 +11,7 @@ class HashTable(object):
         the table."""
         # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
         # Your code goes here
-        hashvalue = calculate_hash_value(string)
+        hashvalue = self.calculate_hash_value(string)
         self.table[hashvalue] = string
         pass
         
@@ -26,7 +26,7 @@ class HashTable(object):
         """Helper function to calulate a
         hash value from a string."""
         # Your code goes here
-
+        return ord(string[0])*100 + ord(string[1])
         pass
 
 
