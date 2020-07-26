@@ -63,7 +63,7 @@ class Graph(object):
         max_index = len(self.nodes)
         adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
         for node in self.nodes:
-            for edge in self.edges:
+            for edge in node.edge:
                 adjacency_matrix[node.value][edge.node_from.value] = edge.value
         return adjacency_matrix
 
