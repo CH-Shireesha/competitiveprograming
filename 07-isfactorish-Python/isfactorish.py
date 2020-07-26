@@ -22,10 +22,10 @@ def fun_isfactorish(n):
 			return False
 		temp //=10
 		prev = temp%10
-		print(prev, i)
+		# print(prev, i)
 		if(prev == i):
 			return False
 		c += 1
 	return True
 
-print(fun_isfactorish(412))
+# print(fun_isfactorish(412))
