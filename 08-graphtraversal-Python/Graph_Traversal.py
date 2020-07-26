@@ -180,7 +180,7 @@ class Graph(object):
                     print(edge.node_from.value, edge.node_to.value)
                     if edge.node_to.visited == False:
                         trans_lst.append(edge.node_to.value)
-            print(trans_lst)
+            # print(trans_lst)
         return result_lst
             
 
