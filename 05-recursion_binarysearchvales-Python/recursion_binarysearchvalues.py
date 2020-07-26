@@ -31,5 +31,7 @@ def binary(l,h,L,v):
 			return[(m,L(m))]+binary(l,m-1,L,v)
 		if(L[m] == v):
 			return[(m,L[m])]
+	else:
+		return []
 	
 		
