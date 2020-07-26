@@ -142,10 +142,11 @@ class Graph(object):
         """
         dfs_list = []
         start_node.visited = True
+        dfs_list.append(start_node.value)
         for i in self.nodes:
             if i.visited == False:
                 self.dfs_helper(i)
-
+        return dfs_list
         pass
 
     def dfs(self, start_node_num):
@@ -213,4 +214,4 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
 
-# print(graph.bfs_names(2) == ['London', 'Shanghai', 'Berlin', 'Sao Paolo', 'Mountain View', 'San Francisco'])
+print(graph.dfs_names(2))
