@@ -166,7 +166,7 @@ class Graph(object):
         self._clear_visited()
         result_lst = []
         trans_lst = []
-        trans.append(start_node_num)
+        trans_lst.append(start_node_num)
         while(trans_lst):
             s = trans_lst.pop()
             result_lst.append(s)
