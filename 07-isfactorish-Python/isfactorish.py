@@ -13,11 +13,13 @@
 
 def fun_isfactorish(n):
 	temp = n
+	c = 0
 	flag = True
 	while(temp > 0):
 		i = temp%10
-		if(n%i != 0):
+		if(i == 0 or n%i != 0 or c > 3 or i == temp):
 			return False
 		temp //=10
+		c += 1
 	return True
 
