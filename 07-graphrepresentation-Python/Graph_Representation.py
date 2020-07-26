@@ -70,3 +70,5 @@ g.insert_edge(100, 1,2)
 g.insert_edge(101,1,3)
 g.insert_edge(102,1,4)
 g.insert_edge(103,3,4)
+
+print(g.get_adjacency_list())
