@@ -163,12 +163,17 @@ class Graph(object):
         ARGUMENTS: start_node_num is the node number (integer)
         MODIFIES: the value of the visited property of nodes in self.nodes
         RETURN: a list of the node values (integers)."""
-        
+        self._clear_visited()
+        lst = []
+        for node in self.nodes:
+            if(edges.node_from.value == edges.node_to.value):
+                node.visited = True
         pass
 
     def bfs_names(self, start_node_num):
         """Return the results of bfs with numbers converted to names."""
         del ret_list[0 : len(ret_list)]
         return [self.node_names[num] for num in self.bfs(start_node_num)]
+
 
 
