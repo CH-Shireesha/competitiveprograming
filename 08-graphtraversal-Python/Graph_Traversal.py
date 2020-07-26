@@ -171,7 +171,7 @@ class Graph(object):
             s = trans_lst.pop()
             result_lst.append(s)
             get_node = self.find_node(s)
-            print(get_node.value, get_node.visited, len(get_node.edges))
+            print(get_node.value, trans_lst)
             get_node.visited = True
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
