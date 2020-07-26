@@ -14,17 +14,14 @@ class nthtenlyprime {
 		return (num-1);
 	}
 	public boolean isprime(int n){
-		int i = 1;
-		int c = 0;
-		while(c <= n){
+		boolean flag = false;
+		for(int i = 2; i < n/2; i++){
 			if(n%i == 0){
-				c = c++;
-				if(c > 2);
-					break;
+				flag = true;
+				break;
 			}
-			i = i++;
 		}
-		if(c == 2){
+		if(!flag){
 			return true;
 		}
 		return false;
