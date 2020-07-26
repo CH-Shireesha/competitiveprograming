@@ -36,3 +36,4 @@ def isprime(n):
         return False
 
 print(fun_nth_carolprime(3))
+print(isprime(959))
