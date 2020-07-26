@@ -146,6 +146,7 @@ class Graph(object):
         for i in start_node.edges:
             if i.node_to.visited == False:
                 self.dfs_helper(i.node_to)
+        print("dfs", dfs_list)
         return dfs_list
         pass
 
