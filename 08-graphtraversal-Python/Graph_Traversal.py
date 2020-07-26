@@ -143,6 +143,7 @@ class Graph(object):
         dfs_list = []
         start_node.visited = True
         dfs_list.append(start_node.value)
+        print("dfs", dfs_list)
         for i in start_node.edges:
             if i.node_to.visited == False:
                 self.dfs_helper(i.node_to)
