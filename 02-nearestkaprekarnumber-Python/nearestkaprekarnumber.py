@@ -22,11 +22,11 @@ def fun_nearestkaprekarnumber(n):
     while True:
         if(iskaprekarnumber(m)):
             if(iskaprekarnumber(s)):
-                if(abs(s-n) > abs(m -n)):
-                    return m
+                if(abs(s-n) < abs(m -n)):
+                    return s
                     break
                 else:
-                    return s
+                    return m
                     break
             else:
                 return m
@@ -54,4 +54,4 @@ def iskaprekarnumber(n):
                 return True
     return False
 
-print(iskaprekarnumber(45))
+# print(iskaprekarnumber(45))
