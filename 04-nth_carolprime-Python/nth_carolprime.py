@@ -34,3 +34,5 @@ def isprime(n):
         return True
     else:
         return False
+
+print(fun_nth_carolprime(0))
