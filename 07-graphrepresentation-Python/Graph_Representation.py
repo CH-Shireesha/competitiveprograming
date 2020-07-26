@@ -50,6 +50,7 @@ class Graph(object):
         adjacency_list = [None] * (max_index + 1)
         for node in self.nodes:
             sub_list = []
+            print('node', node.value)
             for edge in self.edges:
                 print("edge", edge.value, edge.node_from.value, edge.node_to.value)
                 sub_list.append((edge.node_from.value,edge.value))
