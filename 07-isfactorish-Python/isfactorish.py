@@ -18,6 +18,7 @@ def fun_isfactorish(n):
 	while(temp > 0):
 		i = temp%10
 		print(i)
+		c += 1
 		if(i == 0 or n%i != 0 or c > 3):
 			return False
 		temp //=10
@@ -25,7 +26,6 @@ def fun_isfactorish(n):
 		# print(prev, i)
 		if(prev == i):
 			return False
-		c += 1
 	return True
 
 # print(fun_isfactorish(412))
