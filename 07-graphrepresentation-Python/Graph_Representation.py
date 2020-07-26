@@ -58,4 +58,8 @@ class Graph(object):
     
     def get_adjacency_matrix(self):
         adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
+        for node in self.nodes:
+            for edge in self.edges:
+                adjacency_matrix[node.value][edge.to_found] = edge.value
         return adjacency_matrix
+
