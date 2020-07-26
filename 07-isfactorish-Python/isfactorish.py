@@ -17,10 +17,12 @@ def fun_isfactorish(n):
 	flag = True
 	while(temp > 0):
 		i = temp%10
-		print(temp, i)
-		if(i == 0 or n%i != 0 or c > 3 or i == temp):
+		if(i == 0 or n%i != 0 or c > 3):
 			return False
 		temp //=10
+		prev = i
+		print(prev, i)
 		c += 1
 	return True
 
+print(fun_isfactorish(412))
