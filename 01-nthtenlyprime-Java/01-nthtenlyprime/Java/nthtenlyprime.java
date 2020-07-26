@@ -5,10 +5,10 @@ class nthtenlyprime {
 		while(c <= n){
 			if(isprime(num)){
 				if(istenly(num)){
-					c = c++;
+					c++;
 				}
 			}
-			num = num++;
+			num++;
 		}
 		System.out.println(num-1);
 		return (num-1);
@@ -38,8 +38,8 @@ class nthtenlyprime {
 		}
 		return false;
 	}
-	public static void main(String[] args) {
-		nthtenlyprime ten = new nthtenlyprime();
-		ten.fun_nthtenlyprime(0);
-	}
+	// public static void main(String[] args) {
+	// 	nthtenlyprime ten = new nthtenlyprime();
+	// 	ten.fun_nthtenlyprime(0);
+	// }
 }
