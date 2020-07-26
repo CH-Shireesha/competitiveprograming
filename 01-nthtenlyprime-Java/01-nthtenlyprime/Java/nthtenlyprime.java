@@ -2,7 +2,7 @@ class nthtenlyprime {
 	public int fun_nthtenlyprime(int n){
 		int c = 0;
 		int num = 1;
-		while(c <= num){
+		while(c <= n){
 			if(isprime(num)){
 				if(istenly(num)){
 					c = c++;
@@ -10,6 +10,7 @@ class nthtenlyprime {
 			}
 			num = num++;
 		}
+		System.out.println(num-1);
 		return (num-1);
 	}
 	public boolean isprime(int n){
@@ -38,5 +39,9 @@ class nthtenlyprime {
 			return true;
 		}
 		return false;
+	}
+	public static void main(String[] args) {
+		nthtenlyprime ten = new nthtenlyprime();
+		ten.fun_nthtenlyprime(0);
 	}
 }
