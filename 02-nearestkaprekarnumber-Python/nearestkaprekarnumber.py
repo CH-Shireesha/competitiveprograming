@@ -53,3 +53,5 @@ def iskaprekarnumber(n):
             if(n == temp+r):
                 return True
     return False
+
+print(iskaprekarnumber(45))
