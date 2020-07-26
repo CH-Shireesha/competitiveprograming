@@ -172,7 +172,7 @@ class Graph(object):
             result_lst.append(s)
             get_node = self.find_node(s)
             print(get_node.value, trans_lst)
-            get_node.visited = True
+            # get_node.visited = True
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
                 # print(edge.node_from.value, edge.node_to.value)
@@ -180,6 +180,7 @@ class Graph(object):
                     print(edge.node_from.value, edge.node_to.value)
                     if edge.node_to.visited == False:
                         trans_lst.append(edge.node_to.value)
+                        edge.node_to.visited = True
             # print(trans_lst)
         return result_lst
             
