@@ -15,15 +15,15 @@ def binary_search(input_array, value):
     low = 0
     high = len(input_array)-1
     while(low <= high):
-        mid = low+(high-1)//2
+        mid = (low+(high))//2
         print(low,high,mid)
-        if(input_array[mid] < value):
+        if(input_array[mid] == value):
+            return mid
+        elif(input_array[mid] > value):
             print(high)
             high = mid-1
-        elif(input_array[mid] > value):
+        elif(input_array[mid] < value):
             low = mid+1
-        elif(input_array[mid] == value):
-            return mid
     return -1
 
 print(binary_search([1,3,9,11,15,19,29], 29))
