@@ -11,18 +11,18 @@ class BST(object):
     def insert(self, new_val):
         # Your code goes here
         if(self.root == None):
-            root = new_val
+            self.root = Node(new_val)
         else:
-            if(self.root.value < self.value):
+            if(self.root.value < new_val):
                 if(self.root.right is None):
-                    root.right = new_val
+                    self.root.right = Node(new_val)
                 else:
-                    insert(self.root.right,new_val)
+                    self.insert(self.root.right.value)
             else:
-                if(root.left is None):
-                    root.left = new_val
+                if(self.root.left is None):
+                    self.root.left = Node(new_val)
                 else:
-                    insert(root.left,new)
+                    self.insert(self.root.left.value)
         pass
 
     def printSelf(self):
