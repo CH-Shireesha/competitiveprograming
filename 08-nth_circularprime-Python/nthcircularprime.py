@@ -49,4 +49,4 @@ def iscircularprime(n):
 		n = rem*(10**(c1-1))+num
 	return True
 
-print(nthcircularprime(5))
+# print(nthcircularprime(5))
