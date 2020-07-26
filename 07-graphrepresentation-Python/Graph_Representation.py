@@ -53,6 +53,7 @@ class Graph(object):
             for edge in self.edges:
                 sub_list.append((edge.node_from.value,edge.value))
             adjacency_list[node.value] = sub_list
+        print(adjacency_list)
         return adjacency_list
     
     
