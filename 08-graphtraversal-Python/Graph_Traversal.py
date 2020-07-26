@@ -164,11 +164,21 @@ class Graph(object):
         MODIFIES: the value of the visited property of nodes in self.nodes
         RETURN: a list of the node values (integers)."""
         self._clear_visited()
-        lst = []
-        for node in self.nodes:
-            if(edges.node_from.value == edges.node_to.value):
-                node.visited = True
-        pass
+        result_lst = []
+        trans_lst = []
+        trans.append(start_node_num)
+        while(trans_lst):
+            s = trans_lst.pop()
+            result_lst.append(s)
+            get_node = self.find_node(s)
+            get_node.visited = True
+            for edge in get_node.edges:
+                # trans_lst.append(edge.value)
+                if(not edge.node_to.visited):
+                    trans_lst.append(edge.value)
+        return result_lst
+            
+
 
     def bfs_names(self, start_node_num):
         """Return the results of bfs with numbers converted to names."""
