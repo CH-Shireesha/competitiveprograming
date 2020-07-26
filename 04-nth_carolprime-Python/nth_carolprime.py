@@ -20,3 +20,17 @@ def fun_nth_carolprime(n):
             i += 1
         num += 1
     return (num-1)
+
+def isprime(n):
+    c = 0
+    i = 1
+    while(i <= n):
+        if(n%i == 0):
+            c += 1
+            if(c > 2):
+                break
+        i += 1
+    if(c == 2):
+        return True
+    else:
+        return False
