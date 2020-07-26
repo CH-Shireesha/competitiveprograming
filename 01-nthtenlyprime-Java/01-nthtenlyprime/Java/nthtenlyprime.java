@@ -14,7 +14,7 @@ class nthtenlyprime {
 		return (num-1);
 	}
 	public boolean isprime(int n){
-		int i = 2;
+		int i = 1;
 		int c = 0;
 		while(c <= n){
 			if(n%i == 0){
