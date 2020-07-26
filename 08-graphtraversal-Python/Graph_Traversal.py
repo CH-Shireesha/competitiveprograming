@@ -167,6 +167,7 @@ class Graph(object):
         result_lst = []
         trans_lst = []
         trans_lst.append(start_node_num)
+        self.find_node(start_node_num).visited = True
         while(len(trans_lst) > 0):
             s = trans_lst.pop()
             result_lst.append(s)
