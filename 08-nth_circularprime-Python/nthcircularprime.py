@@ -7,4 +7,24 @@
 
 def nthcircularprime(n):
 	# Your code goes here
-	pass
+	num = 1
+	c = 0
+	while(c <= n):
+		if(iscircularprime(num)):
+			c += 1
+		num += 1
+	return num-1
+
+def isprime(n):
+	i = 0
+	c = 0
+	while(i <= n):
+		if(n%i == 0):
+			c += 1
+			if(c > 2):
+				break
+		i += 1
+	if(c <= 2):
+		return True
+	return False
+
