@@ -10,7 +10,7 @@ class nthtenlyprime {
 			}
 			num++;
 		}
-		System.out.println(num-1);
+		// System.out.println(num-1);
 		return (num-1);
 	}
 	public boolean isprime(int n){
