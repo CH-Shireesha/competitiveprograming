@@ -55,7 +55,7 @@ class Graph(object):
                 print("edge", edge.value, edge.node_from.value, edge.node_to.value)
                 if(node.value != edge.node_to.value):
                     sub_list.append((edge.node_to.value,edge.value))
-            adjacency_list[node.value] = sub_list
+            adjacency_list[node.value] = sub_list if sub_list else None
         # print(adjacency_list)
         return adjacency_list
     
