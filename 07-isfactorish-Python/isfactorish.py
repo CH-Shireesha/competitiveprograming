@@ -23,6 +23,8 @@ def fun_isfactorish(n):
 		temp //=10
 		prev = temp%10
 		print(prev, i)
+		if(prev == i):
+			return False
 		c += 1
 	return True
 
