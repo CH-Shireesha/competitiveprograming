@@ -171,7 +171,7 @@ class Graph(object):
             s = trans_lst.pop()
             result_lst.append(s)
             get_node = self.find_node(s)
-            print(get_node.value, get_node.visited, len(get_node.edges))
+            # print(get_node.value, get_node.visited, len(get_node.edges))
             get_node.visited = True
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
@@ -208,4 +208,4 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
 
-print(graph.bfs(5))
+print(graph.bfs(2))
