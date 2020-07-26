@@ -22,6 +22,7 @@ class nthtenlyprime {
 				if(c > 2);
 					break;
 			}
+			i = i++;
 		}
 		if(c == 2){
 			return true;
