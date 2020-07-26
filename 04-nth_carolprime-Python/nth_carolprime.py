@@ -10,4 +10,13 @@
 
 
 def fun_nth_carolprime(n):
-    return 0
+    num = 1
+    i = 0
+    while(i <= n):
+        res = 0
+        res = (2**num)-1
+        res = (res*res -2)
+        if(isprime(res)):
+            i += 1
+        num += 1
+    return (num-1)
