@@ -163,6 +163,7 @@ class Graph(object):
         ARGUMENTS: start_node_num is the node number (integer)
         MODIFIES: the value of the visited property of nodes in self.nodes
         RETURN: a list of the node values (integers)."""
+        
         pass
 
     def bfs_names(self, start_node_num):
