@@ -17,6 +17,7 @@ def fun_isfactorish(n):
 	flag = True
 	while(temp > 0):
 		i = temp%10
+		print(temp, i)
 		if(i == 0 or n%i != 0 or c > 3 or i == temp):
 			return False
 		temp //=10
