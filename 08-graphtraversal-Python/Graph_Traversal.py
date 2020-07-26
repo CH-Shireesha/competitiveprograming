@@ -167,10 +167,11 @@ class Graph(object):
         result_lst = []
         trans_lst = []
         trans_lst.append(start_node_num)
-        while(trans_lst):
+        while(len(trans_lst) > 0):
             s = trans_lst.pop()
             result_lst.append(s)
             get_node = self.find_node(s)
+            print(get_node)
             get_node.visited = True
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
