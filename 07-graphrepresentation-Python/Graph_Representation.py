@@ -37,9 +37,11 @@ class Graph(object):
         to_found.edges.append(new_edge)
         self.edges.append(new_edge)
 
+
     def get_edge_list(self):
         edge_list = []
         return edge_list
+
 
     def get_adjacency_list(self):
         adjacency_list = [None] * (max_index + 1)
