@@ -57,7 +57,7 @@ class Graph(object):
                     sub_list.append((edge.node_to.value,edge.value))
             adjacency_list[node.value] = sub_list if sub_list else None
         # print(adjacency_list)
-        return [(adjacency_list)]
+        return adjacency_list
     
     
     def get_adjacency_matrix(self):
@@ -68,10 +68,10 @@ class Graph(object):
                 adjacency_matrix[node.value][edge.node_from.value] = edge.value
         return adjacency_matrix
 
-g = Graph()
-g.insert_edge(100, 1,2)
-g.insert_edge(101,1,3)
-g.insert_edge(102,1,4)
-g.insert_edge(103,3,4)
+# g = Graph()
+# g.insert_edge(100, 1,2)
+# g.insert_edge(101,1,3)
+# g.insert_edge(102,1,4)
+# g.insert_edge(103,3,4)
 
-print(g.get_adjacency_list())
+# print(g.get_adjacency_list())
