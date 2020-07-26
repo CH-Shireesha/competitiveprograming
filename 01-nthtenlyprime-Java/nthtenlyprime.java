@@ -13,6 +13,7 @@ class nthtenlyprime {
 		// System.out.println(num-1);
 		return (num-1);
 	}
+	
 	public boolean isprime(int n){
 		boolean flag = false;
 		for(int i = 2; i < n/2; i++){
