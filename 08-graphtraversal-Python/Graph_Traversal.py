@@ -176,9 +176,10 @@ class Graph(object):
             for edge in get_node.edges:
                 # trans_lst.append(edge.value)
                 # print(edge.node_from.value, edge.node_to.value)
-                if(edge.node_from.value == get_node.value and not edge.node_to.visited):
+                if(edge.node_from.value == get_node.value):
                     # print(edge.node_from.value, edge.node_to.value)
-                    trans_lst.append(edge.node_to.value)
+                    if edge.node_to.visited == False:
+                        trans_lst.append(edge.node_to.value)
         return result_lst
             
 
