@@ -19,7 +19,7 @@ def fun_nth_carolprime(n):
         if(isprime(res)):
             i += 1
         num += 1
-    return (num-1)
+    return (res)
 
 def isprime(n):
     c = 0
