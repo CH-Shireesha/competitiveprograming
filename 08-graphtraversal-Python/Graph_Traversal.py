@@ -186,5 +186,3 @@ class Graph(object):
         # del ret_list[0 : len(ret_list)]
         return [self.node_names[num] for num in self.bfs(start_node_num)]
 
-
-
