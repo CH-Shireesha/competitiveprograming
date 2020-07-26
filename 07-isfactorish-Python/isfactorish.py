@@ -28,4 +28,4 @@ def fun_isfactorish(n):
 		c += 1
 	return True
 
-print(fun_isfactorish(112))
+print(fun_isfactorish(412))
