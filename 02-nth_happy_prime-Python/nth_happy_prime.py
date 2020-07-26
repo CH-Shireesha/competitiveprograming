@@ -8,11 +8,11 @@ def fun_nth_happy_prime(n):
 	c = 0
 	num = 1
 	while(c <= n):
+		num += 1
 		if(isprime(num)):
 			if(ishappynumber(num)):
 				c += 1
-		num += 1
-	return num-1
+	return num
 
 def isprime(n):
 	i = 1
