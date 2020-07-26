@@ -22,9 +22,9 @@ def fun_nth_lefttruncatableprime(n):
                 l.append(rem)
                 temp //= 10
             l = l[::-1]
-            if i not in l:
-                result = i
-                x = i
+            if 0 not in l:
+                result = 0
+                x = 0
                 for j in range(len(l)):
                     result = result + l[j]*(10**(len(l)-j-1))
                     if(isprime(num-result)):
