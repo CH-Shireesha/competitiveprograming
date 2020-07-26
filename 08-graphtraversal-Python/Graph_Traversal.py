@@ -172,11 +172,7 @@ class Graph(object):
             s = trans_lst.pop(0)
             result_lst.append(s)
             get_node = self.find_node(s)
-            # print(get_node.value, trans_lst)
-            # get_node.visited = True
             for edge in get_node.edges:
-                # trans_lst.append(edge.value)
-                # print(edge.node_from.value, edge.node_to.value)
                 if(edge.node_from.value == get_node.value):
                     print(edge.node_from.value, edge.node_to.value)
                     if edge.node_to.visited == False:
