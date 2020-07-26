@@ -16,4 +16,4 @@ def power(x,num,y):
 		x.append(3**y)
 	return(power(x,num,y+1))
 
-print(recursion_powersof3ton(-42))
+# print(recursion_powersof3ton(100))
