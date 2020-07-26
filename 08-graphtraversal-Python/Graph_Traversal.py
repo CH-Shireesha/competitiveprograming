@@ -174,7 +174,6 @@ class Graph(object):
             get_node = self.find_node(s)
             for edge in get_node.edges:
                 if(edge.node_from.value == get_node.value):
-                    print(edge.node_from.value, edge.node_to.value)
                     if edge.node_to.visited == False:
                         trans_lst.append(edge.node_to.value)
                         edge.node_to.visited = True
