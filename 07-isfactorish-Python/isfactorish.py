@@ -12,5 +12,12 @@
 
 
 def fun_isfactorish(n):
-	return False
+	temp = n
+	flag = True
+	while(temp > 0):
+		i = temp%10
+		if(n%i != 0):
+			return False
+		temp //=10
+	return True
 
