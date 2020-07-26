@@ -28,3 +28,23 @@ def isprime(n):
 		return True
 	return False
 
+def iscircularprime(n):
+	if(n == 0):
+		return False
+	c = 0
+	temp = n
+	while(temp != 0):
+		temp //= 10
+		c += 1
+	for i in range(c):
+		if not isprime(n):
+			return False
+		rotated = n
+		c1 = 0
+		while(rotated != 0):
+			rotated //= 10
+			c1 += 1
+		rem = n%10
+		num = n//10
+		n = rem*(10**(c1-1))+num
+	return True
