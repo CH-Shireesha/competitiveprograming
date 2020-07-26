@@ -207,4 +207,4 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
 
-print(graph.bfs_names(2) == ['London', 'Shanghai', 'Berlin', 'Sao Paolo', 'Mountain View', 'San Francisco'])
+# print(graph.bfs_names(2) == ['London', 'Shanghai', 'Berlin', 'Sao Paolo', 'Mountain View', 'San Francisco'])
