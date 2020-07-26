@@ -40,7 +40,8 @@ class Graph(object):
 
     def get_edge_list(self):
         edge_list = []
-        
+        for edge in self.edges:
+            edge_list.append((edge.value,edge.from_found,edge.to_found))
         return edge_list
 
 
