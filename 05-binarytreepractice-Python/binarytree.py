@@ -21,6 +21,8 @@ class BinaryTree(object):
                 return True
             if(s.left):
                 temp.append(s.left)
+            if(s.right):
+                temp.append(s.right)
         return False
 
     def print_tree(self):
