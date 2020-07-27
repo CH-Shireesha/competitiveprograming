@@ -14,4 +14,7 @@
 
 def destructiveshortenlongruns(L, k):
 	# Your code goes here
-	pass
+	m = 0
+	n = 0
+	num = 0
+	
