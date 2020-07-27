@@ -31,7 +31,7 @@
 def playstep2(hand, dice):
 	# your code goes here
 	h = str(hand)
-	lst = h.split()
+	lst = list(h)
 	print(lst,h)
 	lst.sort()
 	d = str(dice)
