@@ -32,6 +32,8 @@ class BST(object):
     def search(self, find_val):
         # Your code goes here
         temp = self.root
+        if(not find_val):
+            return False
         while(temp):
             if(temp.value == find_val):
                 return True
@@ -41,7 +43,7 @@ class BST(object):
                 temp = temp.right
         return False
 
-tree = BST(4)
-tree.insert(6)
-tree.insert(7)
-print(tree.search(4))
+# tree = BST(4)
+# tree.insert(6)
+# tree.insert(7)
+# print(tree.search(4))
