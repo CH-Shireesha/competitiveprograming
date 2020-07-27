@@ -12,18 +12,18 @@ class BST(object):
         # Your code goes here
         if(self.root == None):
             self.root = Node(new_val)
-        else:
-            if(self.root.value < new_val):
-                if(self.root.right is None):
-                    self.root.right = Node(new_val)
-                else:
-                    self.insert(self.root.right.value)
-            else:
-                if(self.root.left is None):
-                    self.root.left = Node(new_val)
-                else:
-                    self.insert(self.root.left.value)
-        pass
+        temp = self.root
+        while(True):
+            if(temp.value > new_val and temp.left is None):
+                temp.left = Node(new_val)
+                return
+            elif(temp.value < new_val and temp.right is None):
+                temp.right = Node(new_val)
+                return
+            if(temp.value > new_val):
+                temp = temp.left
+            elif(temp.value < new_val):
+                temp = temp.right
 
     def printSelf(self):
         # Your code goes here
@@ -31,7 +31,15 @@ class BST(object):
         
     def search(self, find_val):
         # Your code goes here
-        pass
+        temp = self.root
+        while(temp):
+            if(temp.value == find_val):
+                return True
+            elif(temp.value > find_val):
+                temp = temp.left
+            elif(temp.value <= find_val):
+                temp = temp.right
+        return False
 
 tree = BST(4)
 print(tree.insert(6))
