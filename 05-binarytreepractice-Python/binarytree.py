@@ -14,7 +14,7 @@ class BinaryTree(object):
         False otherwise."""
         # Your code goes here
         temp = []
-        temp.append(root)
+        temp.append(self.root)
         while(len(temp) > 0):
             s = temp.pop(0)
             if(s and s.value == find_val):
