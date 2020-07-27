@@ -44,4 +44,4 @@ class BST(object):
 tree = BST(4)
 tree.insert(6)
 tree.insert(7)
-print(tree.search(8))
+print(tree.search(7))
