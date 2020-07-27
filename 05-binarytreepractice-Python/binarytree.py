@@ -13,7 +13,15 @@ class BinaryTree(object):
         is in the tree, return
         False otherwise."""
         # Your code goes here
-        pass
+        temp = []
+        temp.push(root)
+        while(len(temp) > 0):
+            s = temp.pop(0)
+            if(s.value == find_val):
+                return True
+            if(s.left):
+                temp.append(s.left)
+        return False
 
     def print_tree(self):
         """Print out all tree nodes
