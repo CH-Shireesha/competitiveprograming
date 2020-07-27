@@ -11,4 +11,5 @@
 
 def shortenlongruns(L, k):
 	# Your code goes here
+	
 	pass
