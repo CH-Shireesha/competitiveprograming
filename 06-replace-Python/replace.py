@@ -9,17 +9,15 @@ import re
 def fun_replace(s1, s2, s3):
 	res = []
 	k = ""
-	if s2 in s1:
-		for m in re.finditer(s2, s1):
-			substring = m.start()
-			n1 = m.end()
-			print(substring,n1)
-			prevsub = s1[:substring]
-			sub = s1[n1:]
-			k = prevsub+s3+sub
-			print(k) 
-		return k
-	else:
-		return s1
+	i = 0
+	while(i < len(s1)):
+		if(s1[i:i+len(s2)] == s2):
+			k = k + s3
+			i += len(s2)
+			print(k,i)
+		else:
+			k = k + s1[i]
+			i += 1
+	return k
 
 fun_replace("hellrldowo23ufn348hf oincodnrld123", "rld", "     ",)
