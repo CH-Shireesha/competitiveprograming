@@ -11,11 +11,11 @@
 
 def shortenlongruns(L, k):
 	# Your code goes here
-	num = 0
 	lst = []
 	for i in range(len(L)):
 		if L[i] not in lst:
 			lst.append(L[i])
+			num = 1
 		elif(L[i] != L[i-1]):
 			lst.append(L[i])
 		elif(L[i] == L[i-1]):
