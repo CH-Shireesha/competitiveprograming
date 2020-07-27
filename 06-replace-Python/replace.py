@@ -4,7 +4,7 @@
 # s1.replace(s2, s3), but again without calling s.replace().
 
 
-import re
+
 
 def fun_replace(s1, s2, s3):
 	res = []
