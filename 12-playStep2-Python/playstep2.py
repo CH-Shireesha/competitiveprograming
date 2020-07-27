@@ -30,5 +30,19 @@
 
 def playstep2(hand, dice):
 	# your code goes here
-	h = str(hand).split()
+	lst = str(hand).split()
+	lst.sort()
+	d = str(dice)
+	res = []
+	if(hand.count(hand[0]) == 1 and hand.count(hand[1]) == 1):
+		res.append(lst[-1])
+		res.append(d[-1])
+		res.append(d[-2])
+		return (int(res[-1]+res[-2]+res[0]), int(d[:-1]))
+	elif(hand.count(hand[1]) > 1):
+		res.append(hand[1])
+		res.append(hand[1])
+		res.append(d[-1])
+		return (int(res[-1]+res[0]), int(d[:-1]))
+
 	pass
