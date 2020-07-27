@@ -32,7 +32,7 @@ def playstep2(hand, dice):
 	# your code goes here
 	h = str(hand)
 	lst = list(h)
-	print(lst,h)
+	# print(lst,h)
 	lst.sort()
 	d = str(dice)
 	res = []
