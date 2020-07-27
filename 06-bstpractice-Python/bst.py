@@ -42,6 +42,6 @@ class BST(object):
         return False
 
 tree = BST(4)
-print(tree.insert(6))
-print(tree.insert(7))
-print(tree.search(6))
+tree.insert(6)
+tree.insert(7)
+print(tree.search(8))
