@@ -10,12 +10,11 @@ def quicksort(array):
 		n = array[0]
 		for i in array:
 			if (i < n):
-				arr2.append(i)
-			elif(i == n):
 				arr1.append(i)
+			elif(i == n):
+				arr2.append(i)
 			else:
 				arr3.append(i)
 		sorted_lst = sorted(arr1) + arr2 + sorted(arr3)
 		return sorted_lst
-	
 	pass
