@@ -8,7 +8,7 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
 	dist = ((x2-x1)**2) + ((y2-y1)**2)
 	r = (r1+r2)**2
-	if dist < r:
-		return True
+	if dist > r:
+		return False
 	else:
-		return False 
+		return True
