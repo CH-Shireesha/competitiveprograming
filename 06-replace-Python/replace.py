@@ -14,11 +14,11 @@ def fun_replace(s1, s2, s3):
 		if(s1[i:i+len(s2)] == s2):
 			k = k + s3
 			i += len(s2)
-			print(k,i)
+			# print(k,i)
 		else:
 			k = k + s1[i]
 			i += 1
-	print(k)
+	# print(k)
 	return k
 
-fun_replace("hellrldowo23ufn348hf oincodnrld123", "rld", "     ",)
+# fun_replace("hellrldowo23ufn348hf oincodnrld123", "rld", "     ",)
