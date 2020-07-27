@@ -41,7 +41,7 @@ def playstep2(hand, dice):
 		res.append(d[-1])
 		res.append(d[-2])
 		res.sort()
-		return (int(res[-1]+res[-2]+res[0]), int(d[:-1]))
+		return (int(res[-1]+res[-2]+res[0]), int(d[:-2]))
 	elif(h.count(h[1]) > 1):
 		res.append(h[1])
 		res.append(h[1])
