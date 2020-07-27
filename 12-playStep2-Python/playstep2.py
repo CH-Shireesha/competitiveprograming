@@ -30,4 +30,5 @@
 
 def playstep2(hand, dice):
 	# your code goes here
+	h = str(hand).split()
 	pass
