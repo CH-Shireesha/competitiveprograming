@@ -18,6 +18,7 @@ def fun_replace(s1, s2, s3):
 		else:
 			k = k + s1[i]
 			i += 1
+	print(k)
 	return k
 
 fun_replace("hellrldowo23ufn348hf oincodnrld123", "rld", "     ",)
