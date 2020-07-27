@@ -14,7 +14,22 @@
 
 def destructiveshortenlongruns(L, k):
 	# Your code goes here
-	m = 0
-	n = 0
-	num = 0
-	
+	i = 0
+	c = 0
+	num = 0 
+	while(len(L) > i):
+		if(L[i] == num):
+			c += 1
+			if(c >= k):
+				L.pop(i)
+				i -= 1
+		elif(i == 0):
+			num = L[i]
+			c += 1
+		else:
+			num = L[i]
+			c = 1
+		i += 1
+	return L
+
+# print(destructiveshortenlongruns([2,3,5,5,5,3],2))
